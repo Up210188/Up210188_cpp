@@ -1,2 +1,3 @@
-# Up210188_cpp
-Repositorio materia de programación 
+# *My first repo*
+> ### My name is Osvaldo EG
+> ### My student registration Up210188
