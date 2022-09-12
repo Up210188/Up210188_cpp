@@ -1,5 +1,6 @@
 # *WELCOME TO MY FIRST C++ REPOSITORY*
- ```ini
+ ```diff
+
 >## ***My name is Osvaldo EG***
 
 >## ***My student registration Up210188***
