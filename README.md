@@ -13,4 +13,6 @@
 ## ***DESCRIPTION PROYECT***
 > #### This repository has the purpose of uploading all the c++ programs made in the entire course of the programming subject.
 
-[<img alt="text_alt" width="40px" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/Instagram_logo_2022.svg" />](https://www.facebook.com/profile.php?id=100009909870279)
+[<img alt="text_alt" width="40px" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/Instagram_logo_2022.svg" />](https://instagram.com/osvaldo_69eg?igshid=YmMyMTA2M2Y=)
+
+https://www.facebook.com/profile.php?id=100009909870279
