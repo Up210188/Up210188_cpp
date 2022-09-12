@@ -1,5 +1,5 @@
 # *WELCOME TO MY FIRST C++ REPOSITORY*
- ```fix
+ ```ini
 
 >## ***My name is Osvaldo EG***
 
