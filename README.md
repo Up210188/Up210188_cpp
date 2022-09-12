@@ -1,5 +1,5 @@
 # *WELCOME TO MY FIRST C++ REPOSITORY*
- ```diff
+ ```fix
 
 >## ***My name is Osvaldo EG***
 
