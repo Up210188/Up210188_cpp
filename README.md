@@ -2,7 +2,7 @@
  ```ini
 [My name is Osvaldo EG]
 ```
-## ```diff
+ ```diff
 My student registration Up210188
 ```***
 >## ***My career is computer systems engineer***
