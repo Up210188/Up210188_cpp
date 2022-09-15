@@ -14,7 +14,7 @@ Description:Mi primer programa en C++
 int main(){
 
 //Prints on screen a text
-    std::cout<<"Hello World! This is my first program"; std::cout << "\n";
+    std::cout<<"Hello World! This is my first program"; std::cout <<"\n";
 
 //Return 0 means that the programm ends succesfully
     return 0;
