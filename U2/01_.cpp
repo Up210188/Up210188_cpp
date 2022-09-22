@@ -21,6 +21,21 @@ pantalla el tipo impositivo que le corresponde.
 using namespace std;
 
 int main(){
+    int renta,totalApagar;
+
+    cout<<"¿Cuál es su renta anual en pesos? "; cin>>renta;
+
+    if(renta==0){
+        cout<<"Favor de checar bien el valor de su renta"<<endl;
+    }
+
+    else{
+        if(renta<10000){
+        totalApagar=renta*0.15;
+        cout<<"Su tipo de impositivo es de 15% y el total a pagar es de "<<totalApagar<<" pesos"<<endl;
+        }
+    }    
+        
 
 
 
