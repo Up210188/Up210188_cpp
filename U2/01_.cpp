@@ -21,27 +21,44 @@ pantalla el tipo impositivo que le corresponde.
 using namespace std;
 
 int main(){
-    int renta,totalApagar;
+    int renta;
+    float impositivo;
 
     cout<<"¿Cuál es su renta anual en pesos? "; cin>>renta;
 
-    if(renta==0){
+
+    if(renta<=0){
         cout<<"Favor de checar bien el valor de su renta"<<endl;
     }
 
     else{
         if(renta<10000){
-        totalApagar=renta*0.15;
-        cout<<"Su tipo de impositivo es de 15% y el total a pagar es de "<<totalApagar<<" pesos"<<endl;
+            impositivo=renta*0.05;
+            cout<<"Su tipo de impositivo es de 5% y el total a pagar es de "<<impositivo<<" pesos"<<endl;
+        }
+
+        if(renta>=10000 && renta<20000){
+            impositivo=renta*0.15;
+            cout<<"Su tipo de impositivo es de 15% y el total a pagar es de "<<impositivo<<" pesos"<<endl;
+        }
+
+        if(renta>=20000 && renta<35000){
+            impositivo=renta*0.20;
+            cout<<"Su tipo de impositivo es de 20% y el total a pagar es de "<<impositivo<<" pesos"<<endl;
+        }
+
+        if(renta>=35000 && renta<60000){
+            impositivo=renta*0.30;
+            cout<<"Su tipo de impositivo es de 30% y el total a pagar es de "<<impositivo<<" pesos"<<endl;
+        }
+
+         if(renta>=60000){
+            impositivo=renta*0.45;
+            cout<<"Su tipo de impositivo es de 45% y el total a pagar es de "<<impositivo<<" pesos"<<endl;
         }
     }    
+
         
-
-
-
-
-
-
     return 0;
 }
 
