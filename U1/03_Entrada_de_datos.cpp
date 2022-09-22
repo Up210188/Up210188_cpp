@@ -14,8 +14,8 @@ int main(){
     float flotante;
     double grande;
     char caracter;
-/*imprime un numero entero con iostream
-    cout<<"teclee un numero de tipo entero: "; cin>>numero;
+//imprime un numero entero con iostream
+   /* cout<<"teclee un numero de tipo entero: "; cin>>numero;
 
     cout<< "El numero guardado es: "<<numero<<endl;
 // imprime un numero flotante
@@ -30,20 +30,30 @@ int main(){
     // imprime un digito en char
       cout<<"teclee un caracter: "; cin>>caracter;
      
-    cout<< "El caracter guardado es: "<<caracter<<endl;*/
+    cout<< "El caracter guardado es: "<<caracter<<endl;
 
 //------------------usando stdio.h-------------------------
     cout<<endl;
     cout<< "imprime con stdio.h \n";
     
 //numero entero
-    printf("Dame un numero entero: ");
+   printf("Dame un numero entero: ");
     scanf("%d",&numero);
     printf("El numero es: %d",numero);
+    printf("\n");*/
+
+//numero flotante
+    printf("Dame un numero flotante: ");
+    scanf("%f",&flotante);
+    printf("El numero es: %f",flotante);
+    printf("\n");
 
 
-
-
+//caracter 
+    printf("Dame un caracter: ");
+    scanf("%c",&caracter);
+    printf("El caracter es: %c",caracter);
+    printf("\n");
 
 
     return 0;
