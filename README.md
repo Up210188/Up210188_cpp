@@ -17,7 +17,7 @@
 ## ***IDE***
 > #### The IDE that we are going to use in this course is visual studios code.
 
-![SO](https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/Los-comandos-de-Linux-mas-importantes-para-principiantes_phixr.jpg ="40px)
+![SO](https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/Los-comandos-de-Linux-mas-importantes-para-principiantes_phixr.jpg)
 ## ***OPERATING SYSTEM***
 > #### The operating system that we are going to use in all the programs is linux.
 
