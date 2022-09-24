@@ -14,6 +14,8 @@
 > #### This repository has the purpose of uploading all the c++ programs made in the entire course of the programming subject.
 
 ![IDE](https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/visual-studio-code-1170x658.png)
+## ***IDE***
+> #### The IDE that we are going to use in this course is visual studios code.
 
 
 [<img alt="text_alt" width="40px" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/Instagram_logo_2022.svg" />](https://instagram.com/osvaldo_69eg?igshid=YmMyMTA2M2Y=)
