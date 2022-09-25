@@ -15,15 +15,17 @@
 ## ***DESCRIPTION PROYECT***
 > #### This repository has the purpose of uploading all the c++ programs made in the entire course of the programming subject.
 
-<img alt="IDE" height="150" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/visual-studio-code-1170x658.png"/>
-
 ## ***IDE***
 > #### The IDE that we are going to use in this course is visual studios code.
+<img alt="IDE" height="150" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/visual-studio-code-1170x658.png"/>
 
+
+## ***OPERATING SYSTEM***
+> #### The operating system that we are going to use in all the programs is linux.
 <img alt="SO" height="150" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/Los-comandos-de-Linux-mas-importantes-para-principiantes_phixr.jpg"/>
 
 
-> #### The operating system that we are going to use in all the programs is linux.
+
 
 
 ## ***MY SOCIAL NETWORKS ARE:***
