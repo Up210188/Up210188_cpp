@@ -13,6 +13,8 @@
 ## ***DESCRIPTION PROYECT***
 > #### This repository has the purpose of uploading all the c++ programs made in the entire course of the programming subject.
 
+<img alt="c++" height="100" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/visual-studio-code-1170x658.png"/>
+
 ![IDE](https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/visual-studio-code-1170x658.png)
 ## ***IDE***
 > #### The IDE that we are going to use in this course is visual studios code.
