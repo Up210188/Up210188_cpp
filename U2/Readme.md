@@ -1,14 +1,5 @@
 # UNIT 2 PROGRAMS
  
  ## ***Exercise 1***
- Los tramos impositivos para la declaración de la renta en un determinado país son los siguientes:
-
-Renta	Tipo impositivo
-Menos de $10,000	5%
-Entre $10,000 y $20,000	15%
-Entre $20,000 y $35,000	20%
-Entre $35,000 y $60,000	30%
-Más de $60,000	45%
-Escribir un programa que pregunte al usuario su renta anual y muestre por 
-pantalla el tipo impositivo que le corresponde.
+>###This program asks the user how much his annual income is and if it is less than 10,000 he pays 5% tax, if it is from 10,000 to 20,000 he pays 15%, if the income is from 20,000 to 35,000 he pays 20%, if it is from 35,000 to 60,000 pay 30% and if it is more than 60,000 pay 45%
  
