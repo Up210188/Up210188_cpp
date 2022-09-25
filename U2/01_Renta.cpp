@@ -21,16 +21,19 @@ pantalla el tipo impositivo que le corresponde.
 using namespace std;
 
 int main(){
+    //Declaración de variables
     int renta,porcentaje;
     float impositivo;
 
+    //Pregunta al usuario su renta anual y lo guarda
     cout<<"¿Cuál es su renta anual en pesos? "; cin>>renta;
 
-
+    //Checa que el usuario digito bien su renta
     if(renta<=0){
         cout<<"Favor de checar bien el valor de su renta"<<endl;
     }
 
+    //Checa la renta para ver que porcentaje de impositivo le corresponde
     else{
         if(renta<10000){
             porcentaje=5;
@@ -51,6 +54,8 @@ int main(){
          if(renta>=60000){
             porcentaje=45;
          }
+
+         //Imprime el porsentaje y el valor del impositivo
         impositivo=renta*porcentaje/100;
         cout<<"Su impositivo es de "<<porcentaje <<"% y se va a pagar "<<impositivo<<"$"<<endl;
     }    
