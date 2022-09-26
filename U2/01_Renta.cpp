@@ -57,7 +57,7 @@ int main(){
 
          //Imprime el porsentaje y el valor del impositivo
         impositivo=renta*porcentaje/100;
-        cout<<"Su impositivo es de "<<porcentaje <<"% y se va a pagar "<<impositivo<<"$"<<endl;
+        cout<<"Su impositivo es de "<<porcentaje <<"% y se va a pagar $"<<impositivo<<endl;
     }    
 
         
