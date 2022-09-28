@@ -7,7 +7,7 @@
  ### Tax selection section:
   
   ```c++
-    if(renta<10000){
+        if(renta<10000){
             porcentaje=5;
         }    
         
