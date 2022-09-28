@@ -25,7 +25,7 @@
             
          if(renta>=60000){
             porcentaje=45;
-         }
+        }
   ```      
          
  
