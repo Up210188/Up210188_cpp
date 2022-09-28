@@ -16,7 +16,8 @@
 > #### This repository has the purpose of uploading all the c++ programs made in the entire course of the programming subject.
 
 ## ***FOLDERS***
-[U1 Programming introduction](https://github.com/Up210188/Up210188_cpp/tree/main/U1%20Programming%20introduction
+[U1 Programming introduction](https://github.com/Up210188/Up210188_cpp/tree/main/U1%20Programming%20introduction)
+[U2 Control structures and cycles](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles)
 
 ## ***IDE***
 > #### The IDE that we are going to use in this course is visual studios code.
