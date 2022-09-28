@@ -15,6 +15,9 @@
 ## ***DESCRIPTION PROYECT***
 > #### This repository has the purpose of uploading all the c++ programs made in the entire course of the programming subject.
 
+## ***FOLDERS***
+[U1 Programming introduction](https://github.com/Up210188/Up210188_cpp/tree/main/U1%20Programming%20introduction
+
 ## ***IDE***
 > #### The IDE that we are going to use in this course is visual studios code.
 <img alt="IDE" height="150" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/visual-studio-code-1170x658.png"/>
