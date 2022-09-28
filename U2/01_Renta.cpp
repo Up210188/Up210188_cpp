@@ -39,19 +39,19 @@ int main(){
             porcentaje=5;
         }    
         
-        if(renta>=10000 && renta<20000){
+        else if(renta>=10000 && renta<20000){
             porcentaje=15;
         }
 
-        if(renta>=20000 && renta<35000){
+       else if(renta>=20000 && renta<35000){
             porcentaje=20;
         }
 
-        if(renta>=35000 && renta<60000){
+       else if(renta>=35000 && renta<60000){
             porcentaje=30;
         }    
             
-         if(renta>=60000){
+         else if(renta>=60000){
             porcentaje=45;
          }
 
@@ -61,6 +61,7 @@ int main(){
     }    
 
         
+
     return 0;
 }
 
