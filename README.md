@@ -20,6 +20,11 @@
 
 [U2 Control structures and cycles](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles)
 
+[U3 Functions](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions)
+
+[U4 Files and arrays](https://github.com/Up210188/Up210188_cpp/tree/main/U4%20Files%20and%20arrays)
+
+
 ## ***IDE***
 > #### The IDE that we are going to use in this course is visual studios code.
 <img alt="IDE" height="150" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/visual-studio-code-1170x658.png"/>
