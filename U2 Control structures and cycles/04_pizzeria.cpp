@@ -30,7 +30,7 @@ int main(){
     
     else if(menu==2){
         cout<<"Please choose only one ingredient"<<endl;
-        cout<<"Do you want a peppers? yes=1  \n  Do you want a tofu? yes=2 "<<endl;
+        cout<<"Do you want a peppers? yes=1"<<endl<<"Do you want a tofu? yes=2 "<<endl<<"You answer is: ";
         cin>>ingredientes;
         if(ingredientes==1){
             cout<<" Your pizza is vegetarian and the ingredient is pappers"<<endl;

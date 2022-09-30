@@ -3,16 +3,16 @@ Date: 18/09/2022
 Unidad:1
 Author:Osvaldo Esparza Gutierrez 
 Email: up210188@alumnos.upa.edu.mx
-Description: Tipos de datos en C++
+Description: Data types in C++
 */
 
-//Libreria para manejo de entradas y salida de pantalla
+//Library for managing screen inputs and outputs
 #include <iostream>
 
-//Uso del namespace para evitar el std::
+//Using the namespace to avoid the std::
 using namespace std;
 
-//Función principal de tipo entero
+//integer main function
 int main()
 {
 
@@ -21,15 +21,15 @@ int main()
     double grande = 4.54638291876;
     char caracter = 37;
     
-    cout << "Este programa muestra los tipos de datos. \n";
-    cout << "El número entero es: " << entero << endl;
-    cout << "El tamaño del entero es: " << sizeof(entero) << "bytes" << endl;
-    cout << "El número flotante es: " << flotante << endl;
-    cout << "El tamaño del flotante es: " << sizeof(flotante)<< "bytes" << endl;
-    cout << "El número double es: " << grande << endl;
-    cout << "El tamaño del double es: " << sizeof(grande)<< "bytes" << endl;
-    cout << "El caracter char es: " << caracter << endl;
-    cout << "El tamaño del char es: " << sizeof(caracter)<< "byte" << endl;
+    cout << "This program shows the types of data. \n";
+    cout << "The whole number is: " << entero << endl;
+    cout << "The size of the integer is: " << sizeof(entero) << "bytes" << endl;
+    cout << "The float number is:" << flotante << endl;
+    cout << "The float size is: " << sizeof(flotante)<< "bytes" << endl;
+    cout << "The double number is: " << grande << endl;
+    cout << "The size of the double is: " << sizeof(grande)<< "bytes" << endl;
+    cout << "The char character is: " << caracter << endl;
+    cout << "The char size is: " << sizeof(caracter)<< "byte" << endl;
     
     return 0;
 }

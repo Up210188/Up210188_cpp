@@ -3,7 +3,7 @@ Date: 12/09/2022
 Unidad:1
 Author:Osvaldo Esparza Gutierrez 
 Email: up210188@alumnos.upa.edu.mx
-Description:Mi primer programa en C++
+Description:My firts program in C++
 */
 
 //-----------PREPROCESOR DIRECTIVES-----------
