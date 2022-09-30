@@ -3,7 +3,7 @@ Date: 21/09/2022
 Unidad:1
 Author:Osvaldo Esparza Gutierrez 
 Email: up210188@alumnos.upa.edu.mx
-Description: Entrada de datos en C++
+Description: data entry in C++
 */
 
 #include <iostream>
@@ -16,53 +16,53 @@ int main(){
     double grande;
     char caracter;
 
-    //------------USANDO IOSTREAM--------------
-    //imprime un numero entero 
-    cout<<"usando iostream"<<endl;
-    cout<<"teclee un numero de tipo entero: "; cin>>numero;
+    //------------WEARING IOSTREAM--------------
+    //print an integer
+    cout<<"Wearing iostream"<<endl;
+    cout<<"type an integer number: "; cin>>numero;
 
-    cout<< "El numero guardado es: "<<numero<<endl;
-    // imprime un numero flotante
-    cout<<"teclee un numero de tipo flotante: " ;cin>>flotante;
+    cout<< "The saved number is: "<<numero<<endl;
+    // print a float number
+    cout<<"type a floating type number: " ;cin>>flotante;
       
-    cout<< "El numero guardado es: "<<flotante<<endl;
-    // imprime un numero  double
-    cout<<"teclee un numero de tipo  double: "; cin>>grande;
+    cout<< "The saved number is: "<<flotante<<endl;
+    // print a double number
+    cout<<"type a number of type double: "; cin>>grande;
      
-    cout<< "El numero guardado es: "<<grande<<endl;
+    cout<< "The saved number is: "<<grande<<endl;
 
-    // imprime un digito en char
-    cout<<"teclee un caracter: "; cin>>caracter;
+    // print a digit in char
+    cout<<"type a chart: "; cin>>caracter;
      
-    cout<< "El caracter guardado es: "<<caracter<<endl;
+    cout<< "The saved character is: "<<caracter<<endl;
 
-    //------------------USANDO STDIO.H-------------------------
+    //------------------WEARING STDIO.H-------------------------
     cout<<endl;
-    cout<< "imprime con stdio.h \n";
+    cout<< "Print with stdio.h \n";
    
-    //numero entero
-    printf("Dame un numero entero: ");
+    //integer integer number
+    printf("give me an integer number: ");
     scanf("%d",&numero);
-    printf("El numero es: %d",numero);
+    printf("The number is: %d",numero);
     printf("\n");
 
-    //numero flotante
-    printf("Dame un numero flotante: ");
+    //floating number
+    printf("give me an floating number: ");
     scanf("%f",&flotante);
-    printf("El numero es: %f",flotante);
+    printf("The number is: %f",flotante);
     printf("\n");
 
-    // numero double
-    printf("Dame un numero double: ");
+    // double number
+    printf("Give me a double number: ");
     scanf("%lf",&grande);
-    printf("El numero es: %lf",grande);
+    printf("The number is: %lf",grande);
     printf("\n");
 
 
-    //caracter 
-    printf("Dame un caracter: ");
+    //character 
+    printf("Give me a character: ");
     scanf("%s",&caracter);
-    printf("El caracter es: %c",caracter);
+    printf("The character is: %c",caracter);
     printf("\n");
 
 
