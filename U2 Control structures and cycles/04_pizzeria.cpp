@@ -1,5 +1,5 @@
 
-
+//29
 
 #include <iostream>
 using namespace std;
@@ -7,8 +7,7 @@ using namespace std;
 int main(){
 ;
     int menu,ingredientes;
-    string pizza,ingredientesPalabra;
-
+    
     
     cout<<"Do you want a vegetarian pizza? yes=1 no=2 ";cin>>menu;
 
