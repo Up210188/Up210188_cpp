@@ -4,21 +4,21 @@ Unidad:2
 Author:Osvaldo Esparza Gutierrez 
 Email: up210188@alumnos.upa.edu.mx
 Description:
-En una determinada empresa, sus empleados son evaluados al final de cada año. 
-Los puntos que pueden obtener en la evaluación comienzan en 0.0 y pueden ir aumentando, 
-traduciéndose en mejores beneficios. Los puntos que pueden conseguir 
-los empleados pueden ser 0.0, 0.4, 0.6 o más, pero no valores intermedios 
-entre las cifras mencionadas. A continuación se muestra una tabla con los 
-niveles correspondientes a cada puntuación. La cantidad de dinero conseguida
-en cada nivel es de $2,400 multiplicada por la puntuación del nivel.
+In a certain company, its employees are evaluated at the end of each year.
+The points that can be obtained in the evaluation start at 0.0 and can go up,
+translating into better benefits. The points you can get
+employees can be 0.0, 0.4, 0.6 or more, but not intermediate values
+between the figures mentioned. Below is a table with the
+levels corresponding to each score. The amount of money earned
+on each level is $2,400 multiplied by the level score.
 
-Nivel	Puntuación
-Inaceptable	0.0
-Aceptable	0.4
-Meritorio	0.6 o más
-Escribir un programa que lea la puntuación del usuario e indique su nivel de rendimiento, 
-así como la cantidad de dinero que recibirá el usuario.
-*¡Muchas gracias por preferirnos! Esperamos poder servirte nuevamente.*/
+Level Score
+Unacceptable 0.0
+Acceptable 0.4
+Merit 0.6 or more
+Write a program that reads the user's score and indicates their level of performance,
+as well as the amount of money the user will receive.
+*Thank you very much for choosing us! We hope to serve you again.*/
 
 #include <iostream>
 
@@ -26,24 +26,24 @@ using namespace std;
 
 
 int main(){
-    //Declaración de vavriables
+    //Declaration of variables
     double calificacion;
     float porcentaje,dineroConseguido;
 
-    //Pregunta al usuario la calificacion del empleado
-    cout<<"Digite la calificacion del trabajador: "; cin>>calificacion;
+    //Ask the user for the employee's qualification
+    cout<<"Enter the qualification of the worker: "; cin>>calificacion;
 
-    //Analiza la calificacion para saber que porcentaje del bono obtendra el empleado
+    //Analyze the qualification to know what percentage of the bonus the employee will obtain
     if(calificacion==0.0||calificacion==0.4||calificacion>=0.6&&calificacion<=1){
 
         dineroConseguido= 2400*calificacion;
         porcentaje=calificacion*100;
-        cout<<"Su porcentaje de bono es "<<porcentaje<<"% y su beneficio es $"<<dineroConseguido<<endl;
+        cout<<"Your bonus percentage is"<<porcentaje<<"% and your benefit is $"<<dineroConseguido<<endl;
     }
 
-    //Revisa que la calificación se puso bien
+    //Check that the rating was correct
     else{
-        cout<<"Favor de revisar su calificación "<<endl;
+        cout<<"Please check your rating "<<endl;
     }
 
     

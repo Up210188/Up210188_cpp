@@ -5,35 +5,35 @@ Author:Osvaldo Esparza Gutierrez
 Email: up210188@alumnos.upa.edu.mx
 Description:
 
-Los tramos impositivos para la declaración de la renta en un determinado país son los siguientes:
+The tax brackets for the declaration of income in a given country are the following:
 
-Renta	Tipo impositivo
-Menos de $10,000	5%
-Entre $10,000 y $20,000	15%
-Entre $20,000 y $35,000	20%
-Entre $35,000 y $60,000	30%
-Más de $60,000	45%
-Escribir un programa que pregunte al usuario su renta anual y muestre por 
-pantalla el tipo impositivo que le corresponde.
+Income tax rate
+Less than $10,000 5%
+Between $10,000 and $20,000 15%
+Between $20,000 and $35,000 20%
+Between $35,000 and $60,000 30%
+More than $60,000 45%
+Write a program that asks the user for their annual income and displays by
+display the corresponding tax rate.
 */
 
 #include <iostream>
 using namespace std;
 
 int main(){
-    //Declaración de variables
+    //Declaration of variables
     int renta,porcentaje;
     float impositivo;
 
-    //Pregunta al usuario su renta anual y lo guarda
-    cout<<"¿Cuál es su renta anual en pesos? "; cin>>renta;
+    //It asks the user for their annual income and saves it
+    cout<<"What is your annual income in pesos? "; cin>>renta;
 
-    //Checa que el usuario digito bien su renta
+    //Check that the user entered his income correctly
     if(renta<=0){
-        cout<<"Favor de checar bien el valor de su renta"<<endl;
+        cout<<"Please check the value of your rent well"<<endl;
     }
 
-    //Checa la renta para ver que porcentaje de impositivo le corresponde
+    //Check the income to see what percentage of tax corresponds
     else{
         if(renta<10000){
             porcentaje=5;
@@ -55,9 +55,9 @@ int main(){
             porcentaje=45;
          }
 
-         //Imprime el porsentaje y el valor del impositivo
+         //Prints the percentage and the value of the tax
         impositivo=renta*porcentaje/100;
-        cout<<"Su impositivo es de "<<porcentaje <<"% y se va a pagar $"<<impositivo<<endl;
+        cout<<"Your tax is "<<porcentaje <<"%  and it will pay $"<<impositivo<<endl;
     }    
 
         
