@@ -20,7 +20,7 @@ ingredients it contains.
 using namespace std;
 
 int main(){
-;
+;   //Declaration of variables
     int menu,ingredientes;
     
     // ask the user whitch pizza he wants

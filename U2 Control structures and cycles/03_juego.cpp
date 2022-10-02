@@ -15,7 +15,7 @@ must pay $5 and if they are over 18 years old, $10.
 using namespace std;
 
 int main(){
-
+    //Declaration of variables
     int edad,precio;
 
     //ask the client's age
@@ -33,7 +33,7 @@ int main(){
         else if(edad>=4&&edad<=18){
             precio=5;
         }
-        else if(edad>18){
+        else {
             precio=10;
         }
 

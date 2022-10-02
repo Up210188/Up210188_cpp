@@ -38,7 +38,7 @@ int main(){
 
         dineroConseguido= 2400*calificacion;
         porcentaje=calificacion*100;
-        cout<<"Your bonus percentage is"<<porcentaje<<"% and your benefit is $"<<dineroConseguido<<endl;
+        cout<<"Your bonus percentage is "<<porcentaje<<"% and your benefit is $"<<dineroConseguido<<endl;
     }
 
     //Check that the rating was correct
