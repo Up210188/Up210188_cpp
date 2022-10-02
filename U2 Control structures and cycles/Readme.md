@@ -34,7 +34,9 @@ In this unit we are going to work with some cycles such as: while, do while and 
             porcentaje=45;
         }
   ```      
-         
+   ## ***TESTS***
+Case A: The user entered a data wrong 
+    <img alt="1.1" height="125" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.1.png"/> 
  ## ***EXERCISE 2***
  ## ***EXERCISE 3***
  ## ***EXERCISE 4***

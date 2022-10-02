@@ -1,7 +1,7 @@
 # *WELCOME TO MY FIRST C++ REPOSITORY*
  
 
- <img alt="IDE" height="400" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/Lenguaje-C-1024x576.webp"/>
+ <img alt="C++" height="400" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/Lenguaje-C-1024x576.webp"/>
 
  
   ## ***MY PERSONAL INFORMATION***
