@@ -41,23 +41,23 @@ Case A: The user mistyped the rent.
 
 Case B: The user pays less than 10,000.
 
-<img alt="1.2" height="50" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.2.png"/> 
+<img alt="1.2" height="30" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.2.png"/> 
 
 Case C: The user pays between 10,000 and 20,000.
 
-<img alt="1.3" height="50" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.3.png"/> 
+<img alt="1.3" height="30" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.3.png"/> 
 
 Case D: The user pays between 20,000 and 35,000.
 
-
+<img alt="1.6" height="30" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.6.png"/> 
 
 Case E: The user pays between 35,000 and 60,000.
 
-<img alt="1.4" height="50" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.4.png"/> 
+<img alt="1.4" height="30" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.4.png"/> 
 
 Case F: The user pays more than 60,000.
 
-<img alt="1.5" height="50" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.5.png"/>  
+<img alt="1.5" height="30" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.5.png"/>  
 
  ## ***EXERCISE 2***
  ## ***EXERCISE 3***
