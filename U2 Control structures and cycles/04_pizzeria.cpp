@@ -33,10 +33,10 @@ int main(){
         cout<<"Do you want a peppers? yes=1"<<endl<<"Do you want a tofu? yes=2 "<<endl<<"You answer is: ";
         cin>>ingredientes;
         if(ingredientes==1){
-            cout<<" Your pizza is vegetarian and the ingredient is pappers"<<endl;
+            cout<<" Your pizza is vegetarian and the ingredients are the mozzarella, the tomato and pappers"<<endl;
         }
         else if(ingredientes==2){
-            cout<<" Your pizza is vegetarian and the ingredient is tofu"<<endl;
+            cout<<" Your pizza is vegetarian and the ingredients are the mozzarella, the tomato and tofu"<<endl;
         }
         //print the error in the ingredients
         else{
@@ -50,14 +50,14 @@ int main(){
         cout<<"Do you want a pepperoni? yes=1"<<endl<<"Do you want a ham? yes=2 "<<endl<<"Do you want a salmon? yes=3"<<endl<<"You answer is: ";
         cin>>ingredientes;
         if(ingredientes==1){
-            cout<<" Your pizza isn't vegetarian and the ingredient is pepperoni "<<endl;
+            cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and pepperoni "<<endl;
         }
         else if(ingredientes==2){
-            cout<<" Your pizza isn't vegetarian and the ingredient is ham"<<endl;
+            cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and ham"<<endl;
         }
 
         else if(ingredientes==3){
-            cout<<" Your pizza isn't vegetarian and the ingredient is salmon"<<endl;
+            cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and salmon"<<endl;
         }
         //print the error in the ingredients
         else{
