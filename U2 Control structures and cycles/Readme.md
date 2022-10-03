@@ -49,15 +49,15 @@ Case C: The user pays between 10,000 and 20,000.
 
 Case D: The user pays between 20,000 and 35,000.
 
-<img alt="1.4" height="50" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.4.png"/> 
+
 
 Case E: The user pays between 35,000 and 60,000.
 
-<img alt="1.5" height="50" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.5.png"/> 
+<img alt="1.4" height="50" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.4.png"/> 
 
 Case F: The user pays more than 60,000.
 
-<img alt="1.6" height="50" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.1.png"/> 
+<img alt="1.5" height="50" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.5.png"/>  
 
  ## ***EXERCISE 2***
  ## ***EXERCISE 3***
