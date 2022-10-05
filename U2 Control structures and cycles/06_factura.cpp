@@ -1,5 +1,5 @@
 /*
-Date: 29/09/2022
+Date: 5/10/2022
 Unidad:2
 Author:Osvaldo Esparza Gutierrez 
 Email: up210188@alumnos.upa.edu.mx
@@ -22,8 +22,7 @@ int main(){
         if(productos > 0){
         cout<<"whitch are the price? "; cin>>precio;
 
-        acumulador=precio*productos;
-        total +=acumulador;
+        total +=(precio*productos);
         }
 
     } while (productos > 0);
