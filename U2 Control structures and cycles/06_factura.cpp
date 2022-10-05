@@ -13,7 +13,7 @@ using namespace std;
 int main(){
 
     int productos ;
-    float precio=0, acumulador=0,total=0;
+    float precio=0,total=0;
 
 
     do
