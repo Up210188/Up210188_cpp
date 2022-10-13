@@ -282,18 +282,18 @@ ingredients it contains.
             cin>>ingredientes;
             if(ingredientes==1){
                 cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and pepperoni "<<endl;
-                }
-                else if(ingredientes==2){
-                    cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and ham"<<endl;
-                }
+            }
+            else if(ingredientes==2){
+                cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and ham"<<endl;
+            }
 
-                else if(ingredientes==3){
-                    cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and salmon"<<endl;
-                }
-                //print the error in the ingredients
-                else{
-                    cout<<"Please choose a ingredient"<<endl;
-                }
+            else if(ingredientes==3){
+                cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and salmon"<<endl;
+            }
+            //print the error in the ingredients
+            else{
+                cout<<"Please choose a ingredient"<<endl;
+            }
          }
         //print the error in the pizza
 
@@ -349,21 +349,47 @@ Case H:
 <img alt="4.8" height="55" src="../imagenes/4.8.png"/> 
 
 ## ***EXERCISE 5***
+
 ### Description:
+Make a program in which 6 temperatures are entered and determine the average, the most
+low and the highest.
  
 ### Data entry:
-    ```c++
-       
-  ``` 
+ ```c++
+
+    cout<<"Give me the temperature: "; cin>>temperatura;
+
+ ``` 
 
 
 ### Process:
   
   ```c++
+        do{
+            //ask the user the 6 temperatures
+            cout<<"Give me the temperature: "; cin>>temperatura;
+            temAcum += temperatura;
+            contador++;
+            //Compare to know the highest temperature
+            if(temperatura>=temMayor){
+                temMayor=temperatura;
+            }
+            //Compare to know the lower temperature
+            else if(temperatura<=temMenor){
+                temMenor=temperatura;
+            }
+
+        }while(contador< 6);
        
   ```    
 ### Data output:
   ``` c++
+        //prints average temperatures
+        cout<<"The average of temperature today is: "<< temAcum/6<<endl;
+        //prints the highest temperature
+        cout<<"The higher temperature is: "<<temMayor<<endl;
+        //prints the lowest temperature
+        cout<<"The lower temperature is: "<<temMenor<<endl;
         
   ```
 ### Explanation:
@@ -372,20 +398,38 @@ Case H:
 
 ## ***EXERCISE 6***
 ### Description:
+Make a program that reads indefinitely quantities of products and their price, and at the end
+indicate the total of the invoice. To know that the purchase has been completed, you must
+enter a 0 in the amount.
  
 ### Data entry:
     ```c++
-       
-
+        cout<<"How many products were sold? "; cin>>productos;
+        cout<<"whitch are the price? "; cin>>precio;
     ``` 
 
 ### Process:
   
   ```c++
+        do
+        {
+            //ask the user how many products there are
+            cout<<"How many products were sold? "; cin>>productos;
+            //Check if the user finalized the invoice
+            if(productos > 0){
+                //Ask the user the price of the product
+                cout<<"whitch are the price? "; cin>>precio;
+                //multiply the price by the number of products
+                total +=(precio*productos);
+            }
+        //repeat all the products that the user wants
+        } while (productos > 0);
        
   ```    
 ### Data output:
   ``` c++
+        //print the invoice price
+        cout<<"The total bill is: $"<<total<<endl;
         
   ```
 ### Explanation:
@@ -394,9 +438,13 @@ Case H:
 
 ## ***EXERCISE 7***
 ### Description:
+Write a program that converts from decimal to binary, only for numbers.
+integers greater than 0. The result can be displayed as an integer variable or in a
+character set.
  
 ### Data entry:
     ```c++
+        cout<<"Enter an integrer greater than zero: ";cin>>decimal;
        
     ``` 
 
@@ -404,10 +452,44 @@ Case H:
 ### Process:
   
   ```c++
+   do
+    {
+        //asks the user for the decimal number
+        cout<<"Enter an integrer greater than zero: ";cin>>decimal;
+        if (decimal>0)
+        {
+            //check that the number is greater than 0
+            while (decimal !=0)
+            {
+                //convert decimal number to binary
+                resultado=to_string(decimal%2)+resultado;
+                decimal/=2;
+            }
+            //print the binary number
+            cout<<"The number binary is: "<<resultado<<endl;
+        }
+        //check that the number is equal to 0
+        else if(decimal==0){
+            //prints the binary number is 0
+            cout<<"The number in binary is: "<<decimal<<endl;
+        }
+
+        //check that the number is less than 0
+        else {
+            //print the error
+            cout<<"ERROR: Please Enter an integrer greater than zero "<<endl;
+
+        }
+        
+    //If the user put the number wrong, ask again
+    } while (decimal!=0);
        
   ```    
 ### Data output:
   ``` c++
+  cout<<"The number binary is: "<<resultado<<endl;
+  cout<<"The number in binary is: "<<decimal<<endl;
+  cout<<"ERROR: Please Enter an integrer greater than zero "<<endl;
         
   ```
 ### Explanation:
