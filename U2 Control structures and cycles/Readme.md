@@ -114,8 +114,8 @@ as well as the amount of money the user will receive.
  
 ### Data entry:
     ```c++
-        //Ask the user for the employee's qualification
-        cout<<"Enter the qualification of the worker: "; cin>>calificacion;
+            //Ask the user for the employee's qualification
+            cout<<"Enter the qualification of the worker: "; cin>>calificacion;
     ```
 
 ### Process:
@@ -155,8 +155,18 @@ Case A:
 
 <img alt="1.5" height="40" src="../imagenes/2.1.png"/> 
 
+Case B:
+
+<img alt="1.5" height="40" src="../imagenes/2.2.png"/> 
 
 
+Case C:
+
+<img alt="1.5" height="40" src="../imagenes/2.3.png"/> 
+
+Case D:
+
+<img alt="1.5" height="40" src="../imagenes/2.3.png"/> 
 
 ## ***EXERCISE 3***
 ### Description:
