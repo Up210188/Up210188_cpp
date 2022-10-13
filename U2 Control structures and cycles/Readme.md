@@ -229,35 +229,35 @@ Case D:
 
 Case A:
 
-<img alt="4.1" height="65" src="../imagenes/4.1.png"/> 
+<img alt="4.1" height="75" src="../imagenes/4.1.png"/> 
 
 Case B:
 
-<img alt="4.2" height="65" src="../imagenes/4.2.png"/> 
+<img alt="4.2" height="75" src="../imagenes/4.2.png"/> 
 
 Case C:
 
-<img alt="4.3" height="65" src="../imagenes/4.3.png"/> 
+<img alt="4.3" height="75" src="../imagenes/4.3.png"/> 
 
 Case D:
 
-<img alt="4.4" height="65" src="../imagenes/4.4.png"/> 
+<img alt="4.4" height="75" src="../imagenes/4.4.png"/> 
 
 Case E:
 
-<img alt="4.5" height="65" src="../imagenes/4.5.png"/> 
+<img alt="4.5" height="75" src="../imagenes/4.5.png"/> 
 
 Case F:
 
-<img alt="4.6" height="65" src="../imagenes/4.6.png"/> 
+<img alt="4.6" height="75" src="../imagenes/4.6.png"/> 
 
 Case G:
 
-<img alt="4.7" height="65" src="../imagenes/4.7.png"/> 
+<img alt="4.7" height="75" src="../imagenes/4.7.png"/> 
 
 Case H:
 
-<img alt="4.8" height="65" src="../imagenes/4.8.png"/> 
+<img alt="4.8" height="60" src="../imagenes/4.8.png"/> 
 
 ## ***EXERCISE 5***
 ### Description:
@@ -332,7 +332,7 @@ Case H:
     ```c++
        
   ``` 
-  
+
 
 ### Process:
   
