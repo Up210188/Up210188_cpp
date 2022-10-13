@@ -10,7 +10,7 @@ Description:
 using namespace std;
 
 int main(){
-
+    //Declaration of variables
     int numeroMult,hastaDonde;
 
     cout<<"What number do you want to multiply? ";cin>>numeroMult;
