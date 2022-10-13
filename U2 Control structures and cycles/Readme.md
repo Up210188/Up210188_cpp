@@ -94,6 +94,192 @@ Case F: The user pays more than 60,000.
 
 <img alt="1.5" height="40" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.5.png"/>  
 
- ## ***EXERCISE 2***
- ## ***EXERCISE 3***
- ## ***EXERCISE 4***
+## ***EXERCISE 2***
+### Description:
+In a certain company, its employees are evaluated at the end of each year.
+The points that can be obtained in the evaluation start at 0.0 and can go up,
+translating into better benefits. The points you can get
+employees can be 0.0, 0.4, 0.6 or more, but not intermediate values
+between the figures mentioned. Below is a table with the
+levels corresponding to each score. The amount of money earned
+on each level is $2,400 multiplied by the level score.
+
+Level Score
+Unacceptable 0.0
+Acceptable 0.4
+Merit 0.6 or more
+Write a program that reads the user's score and indicates their level of performance,
+as well as the amount of money the user will receive.
+*Thank you very much for choosing us! We hope to serve you again.
+ 
+### Data entry:
+    ```c++
+        //Ask the user for the employee's qualification
+        cout<<"Enter the qualification of the worker: "; cin>>calificacion;
+    ```
+
+### Process:
+  
+  ```c++
+        //Analyze the qualification to know what percentage of the bonus the employee will obtain
+        if(calificacion==0.0||calificacion==0.4||calificacion>=0.6&&calificacion<=1){
+
+            dineroConseguido= 2400*calificacion;
+            porcentaje=calificacion*100;
+            cout<<"Your bonus percentage is "<<porcentaje<<"% and your benefit is $"<<dineroConseguido<<endl;
+        }
+
+        //Check that the rating was correct
+        else{
+            cout<<"Please check your rating "<<endl;
+        }
+  ```    
+### Data output:
+  ``` c++
+        cout<<"Your bonus percentage is "<<porcentaje<<"% and your benefit is $"<<dineroConseguido<<endl;
+        cout<<"Please check your rating "<<endl;
+  ```
+### Explanation:
+1.-First ask the qualification of the worker.
+
+2.- Then, with an if, analyze that the rating is 0.0 or 0.4 or greater than 0.6 and less than 1.
+
+3.- If the rating is incorrect, print Please check your rating.
+
+4.- If the rating is correct, multiply the rating by 24000 and then multiply the rating by 100 to get the percentage.
+
+5.- Finally, print the percentage and benefit.
+
+### Tests:
+Case A:
+
+<img alt="1.5" height="40" src="../imagenes/2.1.png"/> 
+
+
+
+
+## ***EXERCISE 3***
+### Description:
+ 
+### Data entry:
+    ```c++
+        
+    ```
+
+### Process:
+  
+  ```c++
+       
+  ```    
+### Data output:
+  ``` c++
+        
+  ```
+### Explanation:
+
+### Tests:
+
+## ***EXERCISE 4***
+### Description:
+ 
+### Data entry:
+    ```c++
+        
+    ```
+
+### Process:
+  
+  ```c++
+       
+  ```    
+### Data output:
+  ``` c++
+        
+  ```
+### Explanation:
+
+### Tests:
+
+## ***EXERCISE 5***
+### Description:
+ 
+### Data entry:
+    ```c++
+        
+    ```
+
+### Process:
+  
+  ```c++
+       
+  ```    
+### Data output:
+  ``` c++
+        
+  ```
+### Explanation:
+
+### Tests:
+
+## ***EXERCISE 6***
+### Description:
+ 
+### Data entry:
+    ```c++
+        
+    ```
+
+### Process:
+  
+  ```c++
+       
+  ```    
+### Data output:
+  ``` c++
+        
+  ```
+### Explanation:
+
+### Tests:
+
+## ***EXERCISE 7***
+### Description:
+ 
+### Data entry:
+    ```c++
+        
+    ```
+
+### Process:
+  
+  ```c++
+       
+  ```    
+### Data output:
+  ``` c++
+        
+  ```
+### Explanation:
+
+### Tests:
+
+## ***EXERCISE 8***
+### Description:
+ 
+### Data entry:
+    ```c++
+        
+    ```
+
+### Process:
+  
+  ```c++
+       
+  ```    
+### Data output:
+  ``` c++
+        
+  ```
+### Explanation:
+
+### Tests:
