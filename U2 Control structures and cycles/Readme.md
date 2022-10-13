@@ -113,10 +113,10 @@ as well as the amount of money the user will receive.
 *Thank you very much for choosing us! We hope to serve you again.
  
 ### Data entry:
-    ```c++
-            //Ask the user for the employee's qualification
-            cout<<"Enter the qualification of the worker: "; cin>>calificacion;
-    ```
+```c++
+        //Ask the user for the employee's qualification
+          cout<<"Enter the qualification of the worker: "; cin>>calificacion;
+```
 
 ### Process:
   
@@ -172,9 +172,10 @@ Case D:
 ### Description:
  
 ### Data entry:
-    ```c++
-        
-    ```
+
+  ```c++
+       
+  ```   
 
 ### Process:
   
@@ -188,6 +189,21 @@ Case D:
 ### Explanation:
 
 ### Tests:
+Case A:
+
+<img alt="1.5" height="40" src="../imagenes/3.1.png"/> 
+
+Case B:
+
+<img alt="1.5" height="40" src="../imagenes/3.2.png"/> 
+
+Case C:
+
+<img alt="1.5" height="40" src="../imagenes/3.3.png"/> 
+
+Case D:
+
+<img alt="1.5" height="40" src="../imagenes/3.4.png"/> 
 
 ## ***EXERCISE 4***
 ### Description:
@@ -203,20 +219,52 @@ Case D:
        
   ```    
 ### Data output:
-  ``` c++
-        
-  ```
+  ```c++
+       
+  ``` 
 ### Explanation:
 
 ### Tests:
+
+Case A:
+
+<img alt="1.5" height="40" src="../imagenes/4.1.png"/> 
+
+Case B:
+
+<img alt="1.5" height="40" src="../imagenes/4.2.png"/> 
+
+Case C:
+
+<img alt="1.5" height="40" src="../imagenes/4.3.png"/> 
+
+Case D:
+
+<img alt="1.5" height="40" src="../imagenes/4.4.png"/> 
+
+Case E:
+
+<img alt="1.5" height="40" src="../imagenes/4.5.png"/> 
+
+Case F:
+
+<img alt="1.5" height="40" src="../imagenes/4.6.png"/> 
+
+Case G:
+
+<img alt="1.5" height="40" src="../imagenes/4.7.png"/> 
+
+Case H:
+
+<img alt="1.5" height="40" src="../imagenes/4.8.png"/> 
 
 ## ***EXERCISE 5***
 ### Description:
  
 ### Data entry:
     ```c++
-        
-    ```
+       
+  ``` 
 
 ### Process:
   
@@ -236,8 +284,8 @@ Case D:
  
 ### Data entry:
     ```c++
-        
-    ```
+       
+  ``` 
 
 ### Process:
   
@@ -257,8 +305,8 @@ Case D:
  
 ### Data entry:
     ```c++
-        
-    ```
+       
+  ``` 
 
 ### Process:
   
@@ -278,8 +326,8 @@ Case D:
  
 ### Data entry:
     ```c++
-        
-    ```
+       
+  ``` 
 
 ### Process:
   
