@@ -3,9 +3,10 @@ Date: 5/10/2022
 Unidad:2
 Author:Osvaldo Esparza Gutierrez 
 Email: up210188@alumnos.upa.edu.mx
-Description:Make a program that reads indefinitely quantities of products and their price, and at the end
+Description:
+Make a program that reads indefinitely quantities of products and their price, and at the end
 indicate the total of the invoice. To know that the purchase has been completed, you must
-enter a 0 in the amount
+enter a 0 in the amount.
 */
 
 #include <iostream>

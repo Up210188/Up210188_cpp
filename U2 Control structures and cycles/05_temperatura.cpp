@@ -3,7 +3,8 @@ Date: 3/10/2022
 Unidad:2
 Author:Osvaldo Esparza Gutierrez 
 Email: up210188@alumnos.upa.edu.mx
-Description:Make a program in which 6 temperatures are entered and determine the average, the most
+Description:
+Make a program in which 6 temperatures are entered and determine the average, the most
 low and the highest.*/
 
 
