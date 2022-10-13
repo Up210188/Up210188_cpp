@@ -443,10 +443,11 @@ integers greater than 0. The result can be displayed as an integer variable or i
 character set.
  
 ### Data entry:
-    ```c++
-        cout<<"Enter an integrer greater than zero: ";cin>>decimal;
+
+```c++
+    cout<<"Enter an integrer greater than zero: ";cin>>decimal;
        
-    ``` 
+``` 
 
 
 ### Process:
