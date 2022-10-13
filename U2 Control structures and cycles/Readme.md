@@ -72,23 +72,23 @@ In this unit we are going to work with some cycles such as: while, do while and 
    ### Tests:
 Case A: The user mistyped the rent.
 
-<img alt="1.1" height="50" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.1.png"/> 
+<img alt="1.1" height="50" src="../imagenes/1.1.png"/> 
 
 Case B: The user pays less than 10,000.
 
-<img alt="1.2" height="40" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.2.png"/> 
+<img alt="1.2" height="40" src="../imagenes/1.2.png"/> 
 
 Case C: The user pays between 10,000 and 20,000.
 
-<img alt="1.3" height="40" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.3.png"/> 
+<img alt="1.3" height="40" src="../imagenes/1.3.png"/> 
 
 Case D: The user pays between 20,000 and 35,000.
 
-<img alt="1.6" height="40" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.6.png"/> 
+<img alt="1.6" height="40" src="../imagenes/1.6.png"/> 
 
 Case E: The user pays between 35,000 and 60,000.
 
-<img alt="1.4" height="40" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.4.png"/> 
+<img alt="1.4" height="40" src="../imagenes/1.4.png"/> 
 
 Case F: The user pays more than 60,000.
 
@@ -153,20 +153,20 @@ as well as the amount of money the user will receive.
 ### Tests:
 Case A:
 
-<img alt="1.5" height="40" src="../imagenes/2.1.png"/> 
+<img alt="2.1" height="40" src="../imagenes/2.1.png"/> 
 
 Case B:
 
-<img alt="1.5" height="40" src="../imagenes/2.2.png"/> 
+<img alt="2.2" height="40" src="../imagenes/2.2.png"/> 
 
 
 Case C:
 
-<img alt="1.5" height="40" src="../imagenes/2.3.png"/> 
+<img alt="2.3" height="40" src="../imagenes/2.3.png"/> 
 
 Case D:
 
-<img alt="1.5" height="40" src="../imagenes/2.3.png"/> 
+<img alt="2.4" height="40" src="../imagenes/2.4.png"/> 
 
 ## ***EXERCISE 3***
 ### Description:
@@ -191,24 +191,25 @@ Case D:
 ### Tests:
 Case A:
 
-<img alt="1.5" height="40" src="../imagenes/3.1.png"/> 
+<img alt="3.1" height="40" src="../imagenes/3.1.png"/> 
 
 Case B:
 
-<img alt="1.5" height="40" src="../imagenes/3.2.png"/> 
+<img alt="3.2" height="40" src="../imagenes/3.2.png"/> 
 
 Case C:
 
-<img alt="1.5" height="40" src="../imagenes/3.3.png"/> 
+<img alt="3.3" height="40" src="../imagenes/3.3.png"/> 
 
 Case D:
 
-<img alt="1.5" height="40" src="../imagenes/3.4.png"/> 
+<img alt="3.4" height="40" src="../imagenes/3.4.png"/> 
 
 ## ***EXERCISE 4***
 ### Description:
  
 ### Data entry:
+
     ```c++
         
     ```
@@ -228,35 +229,35 @@ Case D:
 
 Case A:
 
-<img alt="1.5" height="40" src="../imagenes/4.1.png"/> 
+<img alt="4.1" height="65" src="../imagenes/4.1.png"/> 
 
 Case B:
 
-<img alt="1.5" height="40" src="../imagenes/4.2.png"/> 
+<img alt="4.2" height="65" src="../imagenes/4.2.png"/> 
 
 Case C:
 
-<img alt="1.5" height="40" src="../imagenes/4.3.png"/> 
+<img alt="4.3" height="65" src="../imagenes/4.3.png"/> 
 
 Case D:
 
-<img alt="1.5" height="40" src="../imagenes/4.4.png"/> 
+<img alt="4.4" height="65" src="../imagenes/4.4.png"/> 
 
 Case E:
 
-<img alt="1.5" height="40" src="../imagenes/4.5.png"/> 
+<img alt="4.5" height="65" src="../imagenes/4.5.png"/> 
 
 Case F:
 
-<img alt="1.5" height="40" src="../imagenes/4.6.png"/> 
+<img alt="4.6" height="65" src="../imagenes/4.6.png"/> 
 
 Case G:
 
-<img alt="1.5" height="40" src="../imagenes/4.7.png"/> 
+<img alt="4.7" height="65" src="../imagenes/4.7.png"/> 
 
 Case H:
 
-<img alt="1.5" height="40" src="../imagenes/4.8.png"/> 
+<img alt="4.8" height="65" src="../imagenes/4.8.png"/> 
 
 ## ***EXERCISE 5***
 ### Description:
@@ -265,6 +266,7 @@ Case H:
     ```c++
        
   ``` 
+
 
 ### Process:
   
@@ -285,7 +287,8 @@ Case H:
 ### Data entry:
     ```c++
        
-  ``` 
+
+    ``` 
 
 ### Process:
   
@@ -306,7 +309,8 @@ Case H:
 ### Data entry:
     ```c++
        
-  ``` 
+    ``` 
+
 
 ### Process:
   
@@ -328,6 +332,7 @@ Case H:
     ```c++
        
   ``` 
+  
 
 ### Process:
   
