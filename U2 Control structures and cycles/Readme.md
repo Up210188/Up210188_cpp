@@ -170,21 +170,48 @@ Case D:
 
 ## ***EXERCISE 3***
 ### Description:
+Write a program for a company that has game rooms for all ages and wants 
+to automatically calculate the price to charge its customers to enter. The
+The program must ask the user for the customer's age and display the price of the ticket. Yes
+the client is under 4 years old can enter for free, if they are between 4 and 18 years old they 
+must pay $5 and if they are over 18 years old, $10.
  
 ### Data entry:
 
   ```c++
+        //ask the client's age
+        cout<<"How is the age of the client? "; cin>>edad;
        
   ```   
 
 ### Process:
   
   ```c++
+        //check that the age is correct
+        if(edad<0){
+            cout<<"Please check the age"<<endl;
+        }
+        //check the age to see how much the client will pay
+        else{
+            if(edad>=0&&edad<4){
+                precio=0;
+            }
+            else if(edad>=4&&edad<=18){
+                precio=5;
+            }
+            else {
+                precio=10;
+            }
+
+            //print the price of the ticket
+            cout<<"The price of the ticket is $"<<precio<<endl;
+        }
        
   ```    
 ### Data output:
   ``` c++
-        
+         //print the price of the ticket
+            cout<<"The price of the ticket is $"<<precio<<endl;
   ```
 ### Explanation:
 
@@ -207,21 +234,83 @@ Case D:
 
 ## ***EXERCISE 4***
 ### Description:
+The Bella Napoli pizzeria offers vegetarian and non-vegetarian pizzas to its customers. The
+Ingredients for each type of pizza are listed below.
+*Vegetarian ingredients: Pepper and tofu.
+*Non-vegetarian ingredients: Pepperoni, Ham and Salmon.
+Write a program that asks the user if he wants a vegetarian pizza or not, and in
+Based on your answer, show you a menu with the ingredients available for you to choose from.
+You can only choose one ingredient besides the mozzarella and the tomato that are in all the
+pizza.
+At the end it should be shown on the screen if the chosen pizza is vegetarian or not and all the
+ingredients it contains.
  
 ### Data entry:
 
-    ```c++
-        
-    ```
+```c++
+        // ask the user whitch pizza he wants
+        cout<<"Do you want a vegetarian pizza? yes=1 no=2 ";cin>>menu;
+        cout<<"Do you want a peppers? yes=1"<<endl<<"Do you want a tofu? yes=2 "<<endl<<"You answer is: ";
+        cout<<"Do you want a pepperoni? yes=1"<<endl<<"Do you want a ham? yes=2 "<<endl<<"Do you want a salmon? yes=3"<<endl<<"You answer is: ";
+```
 
 ### Process:
   
   ```c++
+        //shows the ingredients of the vegetarian pizza
+        if(menu==1){
+            //the user can choose the ingredient for the vegetarian pizza
+            cout<<"Please choose only one ingredient"<<endl;
+            cout<<"Do you want a peppers? yes=1"<<endl<<"Do you want a tofu? yes=2 "<<endl<<"You answer is: ";
+            cin>>ingredientes;
+            if(ingredientes==1){
+                cout<<" Your pizza is vegetarian and the ingredients are the mozzarella, the tomato and pappers"<<endl;
+            }
+            else if(ingredientes==2){
+                cout<<" Your pizza is vegetarian and the ingredients are the mozzarella, the tomato and tofu"<<endl;
+            }
+            //print the error in the ingredients
+            else{
+                cout<<"Please choose a ingredient"<<endl;
+            }
+        }
+        //shows the ingredients of the non-vegetarian pizza
+        else if(menu==2){
+            //the user can choose the ingredient for the non-vegetarian pizza
+            cout<<"Please choose only one ingredient"<<endl;
+            cout<<"Do you want a pepperoni? yes=1"<<endl<<"Do you want a ham? yes=2 "<<endl<<"Do you want a salmon? yes=3"<<endl<<"You answer is: ";
+            cin>>ingredientes;
+            if(ingredientes==1){
+                cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and pepperoni "<<endl;
+                }
+                else if(ingredientes==2){
+                    cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and ham"<<endl;
+                }
+
+                else if(ingredientes==3){
+                    cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and salmon"<<endl;
+                }
+                //print the error in the ingredients
+                else{
+                    cout<<"Please choose a ingredient"<<endl;
+                }
+         }
+        //print the error in the pizza
+
+        else{
+            cout<<"Please choose a pizza"<<endl;
+        }
        
   ```    
 ### Data output:
   ```c++
-       
+        cout<<" Your pizza is vegetarian and the ingredients are the mozzarella, the tomato and pappers"<<endl;
+        cout<<" Your pizza is vegetarian and the ingredients are the mozzarella, the tomato and tofu"<<endl;
+        cout<<"Please choose a ingredient"<<endl;
+        cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and pepperoni "<<endl;
+        cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and ham"<<endl;
+        cout<<" Your pizza isn't vegetarian and the ingredients are the mozzarella, the tomato and salmon"<<endl;
+        cout<<"Please choose a pizza"<<endl;
   ``` 
 ### Explanation:
 
