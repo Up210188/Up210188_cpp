@@ -11,30 +11,61 @@ In this unit we are going to work with some cycles such as: while, do while and 
 
  ### Description:
  This program asks the user how much his annual income is and if it is less than 10,000 he pays 5% tax, if it is from 10,000 to 20,000 he pays 15%,  if the income is from 20,000 to 35,000 he pays 20%, if it is from 35,000 to 60,000 pay 30% and if it is more than 60,000 pay 45%.
- ### Tax selection section:
+
+ ### Data entry:
+```c++
+        //It asks the user for their annual income and saves it
+        cout<<"What is your annual income in pesos? "; cin>>renta;
+```
+
+ ### Process:
   
   ```c++
-        if(renta<10000){
+        //Check that the user entered his income correctly
+        if(renta<=0){
+        cout<<"Please check the value of your rent well"<<endl;
+        }
+
+        //Check the income to see what percentage of tax corresponds
+        else{
+            if(renta<10000){
             porcentaje=5;
-        }    
+            }    
         
-        if(renta>=10000 && renta<20000){
+            else if(renta>=10000 && renta<20000){
             porcentaje=15;
-        }
+            }
 
-        if(renta>=20000 && renta<35000){
+            else if(renta>=20000 && renta<35000){
             porcentaje=20;
-        }
+            }
 
-        if(renta>=35000 && renta<60000){
+            else if(renta>=35000 && renta<60000){
             porcentaje=30;
-        }    
+            }    
             
-         if(renta>=60000){
+            else if(renta>=60000){
             porcentaje=45;
+            }
+
+            //Prints the percentage and the value of the tax
+            impositivo=renta*porcentaje/100;
+            cout<<"Your tax is "<<porcentaje <<"%  and it will pay $"<<impositivo<<endl;
         }
-  ```      
-   ### TESTS:
+  ```    
+  ### Data output:
+  ``` c++
+        cout<<"Please check the value of your rent well"<<endl;
+       ;
+        cout<<"Your tax is "<<porcentaje <<"%  and it will pay $"<<impositivo<<endl;
+  ```
+### Explanation:
+1.- first ask the user what his annual income is.
+2.- Then check that the rent is correct and if it is incorrect it prints Error.
+3.-Afterwards, with an if, compare the income to know which tax percentage corresponds to it.
+4.- Then multiply the percentage by the rent and divide by 100
+5.- Finally, print the corresponding tax.
+   ### Tests:
 Case A: The user mistyped the rent.
 
 <img alt="1.1" height="50" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/1.1.png"/> 
