@@ -7,6 +7,23 @@ In this unit we are going to work with some cycles such as: while, do while and 
  
  ## ***UNIT EXERCISES***
 
+ [EXERCISE 1](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles#exercise-1)
+
+ [EXERCISE 2](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles#exercise-2)
+
+ [EXERCISE 3](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles#exercise-3)
+
+ [EXERCISE 4](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles#exercise-4)
+
+ [EXERCISE 5](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles#exercise-5)
+
+ [EXERCISE 6](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles#exercise-6)
+
+ [EXERCISE 7](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles#exercise-7)
+ 
+ [EXERCISE 8](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles#exercise-8)
+
+
  ## ***EXERCISE 1***
 
  ### Description:
@@ -403,10 +420,11 @@ indicate the total of the invoice. To know that the purchase has been completed,
 enter a 0 in the amount.
  
 ### Data entry:
-    ```c++
+
+```c++
         cout<<"How many products were sold? "; cin>>productos;
         cout<<"whitch are the price? "; cin>>precio;
-    ``` 
+``` 
 
 ### Process:
   
