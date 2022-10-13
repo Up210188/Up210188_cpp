@@ -56,14 +56,18 @@ In this unit we are going to work with some cycles such as: while, do while and 
   ### Data output:
   ``` c++
         cout<<"Please check the value of your rent well"<<endl;
-       ;
+       
         cout<<"Your tax is "<<porcentaje <<"%  and it will pay $"<<impositivo<<endl;
   ```
 ### Explanation:
 1.- first ask the user what his annual income is.
+
 2.- Then check that the rent is correct and if it is incorrect it prints Error.
+
 3.-Afterwards, with an if, compare the income to know which tax percentage corresponds to it.
-4.- Then multiply the percentage by the rent and divide by 100
+
+4.- Then multiply the percentage by the rent and divide by 100.
+
 5.- Finally, print the corresponding tax.
    ### Tests:
 Case A: The user mistyped the rent.
