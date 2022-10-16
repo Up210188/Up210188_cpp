@@ -412,6 +412,9 @@ low and the highest.
 ### Explanation:
 
 ### Tests:
+Case A:
+
+<img alt="5.1" height="55" src="../imagenes/5.1.png"/> 
 
 ## ***EXERCISE 6***
 ### Description:
@@ -453,6 +456,10 @@ enter a 0 in the amount.
 ### Explanation:
 
 ### Tests:
+Case A:
+
+<img alt="6.1" height="55" src="../imagenes/6.1.png"/> 
+
 
 ## ***EXERCISE 7***
 ### Description:
@@ -514,25 +521,58 @@ character set.
 ### Explanation:
 
 ### Tests:
+Case A:
+
+<img alt="7.1" height="55" src="../imagenes/7.1.png"/> 
+
+Case B:
+
+<img alt="7.2" height="55" src="../imagenes/7.2.png"/> 
+
+Case A:
+
+<img alt="7.3" height="55" src="../imagenes/7.3.png"/> 
+
 
 ## ***EXERCISE 8***
 ### Description:
+Make a program that asks the user what number he wants to multiply and to where and prints it in a table.
  
 ### Data entry:
-    ```c++
-       
+```c++
+       //asks the user what number he wants to multiply
+    cout<<"What number do you want to multiply? ";cin>>numeroMult;
+    //asks the user how many numbers he wants to multiply
+    cout<<"Up to what number do you want the table? ";cin>>hastaDonde;cout<<endl;
+
   ``` 
 
 
 ### Process:
   
   ```c++
+   //prints the number multiplied to where the user said
+    for (int contador=1;contador<=hastaDonde;contador++){
+        cout<<"|"<<contador<<"\t|"<<"x\t|"<<numeroMult<<"\t"<<"|=\t|"<<contador*numeroMult<<"\t|"<<endl;
+
+        //print the multiplications in a table
+        for (int guion=1; guion<42; guion++)
+        {
+            cout<<"-";
+        }
+        
+        cout<<endl; 
+    }
        
   ```    
 ### Data output:
   ``` c++
-        
+        cout<<"|"<<contador<<"\t|"<<"x\t|"<<numeroMult<<"\t"<<"|=\t|"<<contador*numeroMult<<"\t|"<<endl;
+        cout<<"-";
   ```
 ### Explanation:
 
 ### Tests:
+Case A:
+
+<img alt="7.1" height="55" src="../imagenes/7.1.png"/> 
