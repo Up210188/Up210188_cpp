@@ -414,7 +414,7 @@ low and the highest.
 ### Tests:
 Case A:
 
-<img alt="5.1" height="80" src="../imagenes/5.1.png"/> 
+<img alt="5.1" height="90" src="../imagenes/5.1.png"/> 
 
 ## ***EXERCISE 6***
 ### Description:
@@ -458,7 +458,7 @@ enter a 0 in the amount.
 ### Tests:
 Case A:
 
-<img alt="6.1" height="80" src="../imagenes/6.1.png"/> 
+<img alt="6.1" height="90" src="../imagenes/6.1.png"/> 
 
 
 ## ***EXERCISE 7***
@@ -575,4 +575,4 @@ Make a program that asks the user what number he wants to multiply and to where 
 ### Tests:
 Case A:
 
-<img alt="8.1" height="55" src="../imagenes/8.1.png"/> 
+<img alt="8.1" height="90" src="../imagenes/8.1.png"/> 
