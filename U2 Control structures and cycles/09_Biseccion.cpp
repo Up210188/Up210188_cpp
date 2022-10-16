@@ -25,6 +25,7 @@ int main(){
     ya=ResolverEcuacion(a);
     yb=ResolverEcuacion(b);
     yc=ResolverEcuacion(c);
-    cout<<ya<<yb<<yc;
+    
+    
     return 0;
 }
