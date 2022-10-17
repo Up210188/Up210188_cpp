@@ -233,9 +233,12 @@ must pay $5 and if they are over 18 years old, $10.
 ### Explanation:
 
 1.- Ask the user his age.
+
 2.- Then with an if check that the age is correct.
 3.- If the age is correct, check if the age is less than 4, print that the ticket is $0.
+
 4.-If it is not less than 4, check that it is greater than 4 and less than or equal to 18 and print that the ticket is $5.
+
 5.- Finally, if you are over 18, print that the ticket is $10.
 
 ### Tests:
@@ -337,12 +340,19 @@ ingredients it contains.
   ``` 
 ### Explanation:
 1.-Ask the user if he wants a vegetarian pizza.
+
 2.- If it is, choose the option yes with an if it shows the menu where you can choose your ingredient.
+
 3.-If the user types an option that is not in the menu, it prints that please choose an ingredient.
+
 4.-If you choose an option from the menu, it prints that your pizza is vegetarian and the ingredient you chose.
+
 5.- If at the beginning the user types that he does not want a vegetarian pizza, the menu is shown with the non-vegetarian ingredients.
+
 6.-If the user puts an option that is not in the print menu, please choose an ingredient.
+
 7.-If you choose an option from the menu, your pizza is printed, it is not vegetarian and the ingredient you chose is printed.
+
 8.- Finally, if at the price you choose an option that is not printed, please choose a pizza.
 
 ### Tests:
@@ -425,7 +435,9 @@ low and the highest.
   ```
 ### Explanation:
 1.-First with a do-while cycle, it asks the user for the 6 temperatures.
+
 2.-Within the cycle with if saves the highest and lowest temperature.
+
 3.- Finally, the average of the 6 temperatures, the highest and the lowest temperature, is printed.
 
 ### Tests:
