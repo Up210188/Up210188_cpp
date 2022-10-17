@@ -168,20 +168,20 @@ as well as the amount of money the user will receive.
 5.- Finally, print the percentage and benefit.
 
 ### Tests:
-Case A:
+Case A:The worker's rating is 0.
 
 <img alt="2.1" height="40" src="../imagenes/2.1.png"/> 
 
-Case B:
+Case B:The worker rating is 0.4.
 
 <img alt="2.2" height="40" src="../imagenes/2.2.png"/> 
 
 
-Case C:
+Case C:The worker's rating is greater than 0.6.
 
 <img alt="2.3" height="40" src="../imagenes/2.3.png"/> 
 
-Case D:
+Case D:The worker's rating is greater than 1.
 
 <img alt="2.4" height="40" src="../imagenes/2.4.png"/> 
 
@@ -232,20 +232,26 @@ must pay $5 and if they are over 18 years old, $10.
   ```
 ### Explanation:
 
+1.- Ask the user his age.
+2.- Then with an if check that the age is correct.
+3.- If the age is correct, check if the age is less than 4, print that the ticket is $0.
+4.-If it is not less than 4, check that it is greater than 4 and less than or equal to 18 and print that the ticket is $5.
+5.- Finally, if you are over 18, print that the ticket is $10.
+
 ### Tests:
-Case A:
+Case A:The user puts his age wrong.
 
 <img alt="3.1" height="40" src="../imagenes/3.1.png"/> 
 
-Case B:
+Case B:The user puts his age less than 4.
 
 <img alt="3.2" height="40" src="../imagenes/3.2.png"/> 
 
-Case C:
+Case C:The user puts his age greater than 4 and less than or equal to 18.
 
 <img alt="3.3" height="40" src="../imagenes/3.3.png"/> 
 
-Case D:
+Case D:The user puts his age greater than 18.
 
 <img alt="3.4" height="40" src="../imagenes/3.4.png"/> 
 
@@ -330,38 +336,46 @@ ingredients it contains.
         cout<<"Please choose a pizza"<<endl;
   ``` 
 ### Explanation:
+1.-Ask the user if he wants a vegetarian pizza.
+2.- If it is, choose the option yes with an if it shows the menu where you can choose your ingredient.
+3.-If the user types an option that is not in the menu, it prints that please choose an ingredient.
+4.-If you choose an option from the menu, it prints that your pizza is vegetarian and the ingredient you chose.
+5.- If at the beginning the user types that he does not want a vegetarian pizza, the menu is shown with the non-vegetarian ingredients.
+6.-If the user puts an option that is not in the print menu, please choose an ingredient.
+7.-If you choose an option from the menu, your pizza is printed, it is not vegetarian and the ingredient you chose is printed.
+8.- Finally, if at the price you choose an option that is not printed, please choose a pizza.
 
 ### Tests:
 
-Case A:
+Case A:The user chose vegetarian pizza and peppers.
 
 <img alt="4.1" height="80" src="../imagenes/4.1.png"/> 
 
-Case B:
+Case B:The user chose vegetarian pizza and tofu.
 
 <img alt="4.2" height="80" src="../imagenes/4.2.png"/> 
 
-Case C:
+Case C:The user chose vegetarian pizza and no ingredients.
 
 <img alt="4.3" height="80" src="../imagenes/4.3.png"/> 
 
-Case D:
+Case D:User chooses non-vegetarian pizza and pepperoni.
 
 <img alt="4.4" height="80" src="../imagenes/4.4.png"/> 
 
-Case E:
+Case E:The user chose non-vegetarian pizza and ham.
 
 <img alt="4.5" height="80" src="../imagenes/4.5.png"/> 
 
-Case F:
+Case F:The user chose non-vegetarian pizza and salmon.
 
 <img alt="4.6" height="80" src="../imagenes/4.6.png"/> 
 
-Case G:
+Case G:The user chose non-vegetarian pizza and no ingredients
 
 <img alt="4.7" height="80" src="../imagenes/4.7.png"/> 
 
-Case H:
+Case H:The user does not choose pizza
 
 <img alt="4.8" height="55" src="../imagenes/4.8.png"/> 
 
@@ -410,9 +424,12 @@ low and the highest.
         
   ```
 ### Explanation:
+1.-First with a do-while cycle, it asks the user for the 6 temperatures.
+2.-Within the cycle with if saves the highest and lowest temperature.
+3.- Finally, the average of the 6 temperatures, the highest and the lowest temperature, is printed.
 
 ### Tests:
-Case A:
+Case A:Average, higher temperature and lower temperature.
 
 <img alt="5.1" height="120" src="../imagenes/5.1.png"/> 
 
