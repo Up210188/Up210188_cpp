@@ -4,7 +4,7 @@ Unidad:2
 Author:Osvaldo Esparza Gutierrez 
 Email: up210188@alumnos.upa.edu.mx
 Description:
-make a program that asks the user what number he wants to multiply and to where and prints it in a table
+Make a program that asks the user what number he wants to multiply and to where and prints it in a table.
 */
 
 #include <iostream>
