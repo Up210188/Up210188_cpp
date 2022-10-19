@@ -23,7 +23,7 @@ In this unit we are going to work with some cycles such as: while, do while and 
  
  [EXERCISE 8](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles#exercise-8)
 
-[EXERCISE 9]()
+[EXERCISE 9](https://github.com/Up210188/Up210188_cpp/tree/main/U2%20Control%20structures%20and%20cycles#exercise-9)
 
  ## ***EXERCISE 1***
 
@@ -675,10 +675,10 @@ Write a program that solves a root by the bisection method.
 
 Case A:
 
-<img alt="9.1" height="150" src="../imagenes/9.1.png"/> 
+<img alt="9.1" height="250" src="../imagenes/9.1.png"/> 
 
 Case B:
 
-<img alt="9.2" height="55" src="../imagenes/9.2.png"/> 
+<img alt="9.2" height="100" src="../imagenes/9.2.png"/> 
 
 
