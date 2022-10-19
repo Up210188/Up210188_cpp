@@ -612,12 +612,72 @@ rite a program that solves a root by the bisection method.
 
 ### Data entry:
 
+```c++ 
+       //Ask the value of A
+    cout<<"Give me the value of a: ";cin>>a;
+    //Ask the value of B
+    cout<<"Give me the value of b: ";cin>>b;
+```
+
 ### Process:
 
+```c++
+    do
+    {
+        //Get the value of C
+        c=(a+b)/2;
+        ya=ResolverEcuacion(a);
+        yb=ResolverEcuacion(b);
+        yc=ResolverEcuacion(c);
+
+        //prints the value of a, b, c, ya, yb, yc
+         cout<< fixed <<setprecision(2)<<"|"<<a<<"\t|"<<b<<"\t|"<<c<<"\t|"<<ya<<"\t|"<<yb<<"\t|"<<yc<<"\t|"<<endl;
+        
+        //print the table
+        for(int guion=0;guion<49;guion++){
+            cout<<"-";
+        }
+        //verify that in the multiplication of ya and yc the sign changes
+         cout<<endl;
+        if(ya*yc<0){
+            b=c;
+
+        }
+        //verify that in the multiplication of yb and yc the sign changes
+        else if(yb*yc<0){
+            a=c;
+        }
+        //prints that the root does not exist
+        else{
+            
+            raiz=1;
+            cout<<"The root does not exist in this interval"<<endl;
+            break;
+        }
+       //the loop ends when yc is equal to the error 
+    } while (abs(yc)>=error);
+```
+
 ### Data output:
+
+```c++
+
+    cout<< fixed <<setprecision(2)<<"|"<<a<<"\t|"<<b<<"\t|"<<c<<"\t|"<<ya<<"\t|"<<yb<<"\t|"<<yc<<"\t|"<<endl;
+    cout<<"The root does not exist in this interval"<<endl;
+    cout<<"The root is: "<<c<<endl;
+
+```
 
 ### Explanation:
 
 ### Tests:
+
+Case A:
+
+<img alt="9.1" height="150" src="../imagenes/9.1.png"/> 
+
+Case B:
+
+<img alt="9.2" height="55" src="../imagenes/9.2.png"/> 
 
 
