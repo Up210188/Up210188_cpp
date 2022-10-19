@@ -605,3 +605,19 @@ Make a program that asks the user what number he wants to multiply and to where 
 Case A:
 
 <img alt="8.1" height="120" src="../imagenes/8.1.png"/> 
+
+## ***EXERCISE 8***
+### Description:
+rite a program that solves a root by the bisection method.
+
+### Data entry:
+
+### Process:
+
+### Data output:
+
+### Explanation:
+
+### Tests:
+
+
