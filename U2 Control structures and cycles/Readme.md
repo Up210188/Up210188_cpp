@@ -486,7 +486,7 @@ enter a 0 in the amount.
 ### Explanation:
 
 ### Tests:
-Case A:
+Case A: Total bill
 
 <img alt="6.1" height="120" src="../imagenes/6.1.png"/> 
 
@@ -551,15 +551,15 @@ character set.
 ### Explanation:
 
 ### Tests:
-Case A:
+Case A: Puts a number greater than 0.
 
 <img alt="7.1" height="55" src="../imagenes/7.1.png"/> 
 
-Case B:
+Case B:Puts a number equal to 0.
 
 <img alt="7.2" height="55" src="../imagenes/7.2.png"/> 
 
-Case C:
+Case C: Puts a number less than 0.
 
 <img alt="7.3" height="55" src="../imagenes/7.3.png"/> 
 
@@ -603,7 +603,7 @@ Make a program that asks the user what number he wants to multiply and to where 
 ### Explanation:
 
 ### Tests:
-Case A:
+Case A:Enter the number to multiply and to where
 
 <img alt="8.1" height="120" src="../imagenes/8.1.png"/> 
 
@@ -673,12 +673,13 @@ Write a program that solves a root by the bisection method.
 
 ### Tests:
 
-Case A:
+Case A:Print the root
 
 <img alt="9.1" height="250" src="../imagenes/9.1.png"/> 
 
-Case B:
+Case B:The root does not exist
 
 <img alt="9.2" height="100" src="../imagenes/9.2.png"/> 
+
 
 
