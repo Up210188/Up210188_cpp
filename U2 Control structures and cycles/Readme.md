@@ -485,6 +485,16 @@ enter a 0 in the amount.
   ```
 ### Explanation:
 
+1.- In a do-while cycle it asks how many products there are.
+
+2.- Then with an if check that the value of the products is greater than 0.
+
+3.- Inside the if it asks the price of the product and multiplies it by the number of products.
+
+4.-Then the result is added to the total.
+
+5.- Finally, if the value of the product is less than 0, it exits the do-while cycle and prints the total.
+
 ### Tests:
 Case A: Total bill
 
@@ -550,6 +560,18 @@ character set.
   ```
 ### Explanation:
 
+1.-In a do-while cycle it asks the user for a number greater than 0.
+
+2.- Then with an if verify that the number is greater than 0.
+
+3.- Within the if with a while cycle, use the %2 and save it in a string variable and the decimal is divided by 2.
+
+4.-The cycle ends when the decimal number is equal to 0 and prints it.
+
+5.- If the number entered by the user is 0, it prints the number is 0.
+
+6.- Finally, if the user enters a number less than 0, it prints a message that the number must be greater than 0 and asks again what its number is.
+
 ### Tests:
 Case A: Puts a number greater than 0.
 
@@ -601,6 +623,12 @@ Make a program that asks the user what number he wants to multiply and to where 
         cout<<"-";
   ```
 ### Explanation:
+
+1.- Ask the user what is the number he wants to multiply and to where.
+
+2.-Then with a for cycle it prints the results with a tabulator and with another for it prints lines.
+
+3.- Finally print the results in table form.
 
 ### Tests:
 Case A:Enter the number to multiply and to where
@@ -670,6 +698,23 @@ Write a program that solves a root by the bisection method.
 ```
 
 ### Explanation:
+
+1.- We enter a function where the equation can be solved.
+
+2.- Ask the user the value of a and b.
+
+3.- Then print the header of the table and print the lines with a for loop.
+
+4.-after with inside a for loop we are going to get the value of c by adding a + b and dividing by 2.
+5.- Then we solve the equation in a, b and c.
+
+6.- Then we print the values of a, b, c, ya, yb and yc.
+
+7.- After using an if we are going to check if there is a sign change in ya and c and if there is, b will be equal to c. If there is not, we will check if there is a change of sign yb and yc and if there is a, it will be the same as c. If there is no change of signs, it will print that the root does not exist.
+
+8.- The cycle will be repeated until the absolute value of yc is equal to error.
+
+9.-Finally the value of the root is printed.
 
 ### Tests:
 
