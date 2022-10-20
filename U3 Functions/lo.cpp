@@ -11,15 +11,18 @@ Description:
 
 using namespace std;
 int getMaxVal(int num1, int num2);
+int getMinVal(int num1, int num2);
 int main(){
-    int numero1,numero2,valorMax;
+    int numero1,numero2,valorMax,valorMIn;
 
     cout<<"dame el primer numero: ";cin>>numero1;
     cout<<"dame el segundo numero: ";cin>>numero2;
 
     valorMax=getMaxVal(numero1,numero2);
+    valorMIn=getMinVal(numero1,numero2);
+    cout<<"el numero mayor es: "<<valorMax<<endl;
 
-    cout<<"el numero mayor es: "<<valorMax;
+    cout<<"el numero menor es: "<<valorMIn;
 
 
 
@@ -31,4 +34,10 @@ int main(){
 int getMaxVal(int num1, int num2){
 
     return (num1>num2)?num1:num2;
+}
+
+
+int getMinVal(int num1, int num2){
+
+    return (num1<num2)?num1:num2;
 }
