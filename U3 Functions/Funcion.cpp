@@ -3,7 +3,7 @@ Date: //2022
 Unidad:3
 Author:Osvaldo Esparza Gutierrez 
 Email: up210188@alumnos.upa.edu.mx
-Description:
+Description:get the maximum and minimum value
 
 */
 
