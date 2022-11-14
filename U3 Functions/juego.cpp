@@ -43,7 +43,7 @@ int main(){
     }
 
     if(Turnojugador>9){
-        cout<<"es empate";
+        cout<<"es empate"<<endl;
         break;
     }
 
@@ -237,3 +237,4 @@ bool Ganar(){
     }
 
 }
+
