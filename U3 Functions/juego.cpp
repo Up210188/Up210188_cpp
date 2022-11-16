@@ -63,7 +63,7 @@ int main(){
         }while (ganador==false);
     }
 
-    else if(ModoDeJuego==1){
+  /* else if(ModoDeJuego==1){
         ConstruirTablero();
 
         do{
@@ -104,7 +104,7 @@ int main(){
 
     }
     
-    
+    */
     
     
     
@@ -293,6 +293,8 @@ bool Ganar(){
 
 }
 
+
+/*
 int TurnoPC(){
     
     int Jugada;
@@ -315,6 +317,7 @@ int TurnoPC(){
     }
     return Jugada;
 }
+*/
 
 
 void ConstruirTableroImaginario(){
@@ -485,6 +488,7 @@ void remplazarCasillaImaginario(int jugada){
     }
 
 }
+
 
 int MejorJugada(char jugador){
     bool Casillaocupada = false;
