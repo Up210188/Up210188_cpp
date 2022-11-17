@@ -1,36 +1,117 @@
-/*
-Date: 28/10/2022
-Unidad:3
-Author:Osvaldo Esparza Gutierrez 
-Email: up210188@alumnos.upa.edu.mx
-Description:
-Make the cat videogame
-*/
-
 #include <iostream>
+#include <time.h>
 
 using namespace std;
 
 void ConstruirTablero();
-char PosiblesJugadas();
-int tablero[3][3];
+int SeleccionarJugada();
+char AreaJuego[3][3]={'1','2','3','4','5','6','7','8','9'};
+void ConstruirTableroImaginario();
+int Turnojugador=1;
+bool comprobarCasiilaOcupada(int jugada);
+bool comprobarCasiilaOcupadaImaginaria(int jugada);
+void remplazarCasilla(int jugada);
+void remplazarCasillaImaginario(int jugada);
+bool Ganar();
+bool GanarImaginario(int jugada);
+int MejorJugada(char jugador);
+int TurnoPC();
+char PC ='O';
+char HUMANO ='X';
 int main(){
+    int jugada;
+    bool casillaOcupada=true;
+    bool ganador=false;
+    int ModoDeJuego=0;
 
-/*
-    tablero[0][0]=1;
-    tablero[0][1]=2;
-    tablero[0][2]=3;
-    tablero[1][0]=4;
-    tablero[1][1]=5;
-    tablero[1][2]=6;
-    tablero[2][0]=7;
-    tablero[2][1]=8;
-    tablero[2][2]=9;*/
+    cout<<"Seleccione el modo de juego: solo=1 multiplayer=2 ";cin>>ModoDeJuego;
+
 
     
+    if(ModoDeJuego==2){
+        ConstruirTablero();
+
+        do{
+            do
+        {
+        jugada=SeleccionarJugada();
+        casillaOcupada=comprobarCasiilaOcupada(jugada);
+        if(casillaOcupada==true){
+            cout<<"otra vez ";
+        }
+        
+        } while (casillaOcupada==true);
+
+        if (casillaOcupada == false)
+            {
+                system("clear");
+                remplazarCasilla(jugada);
+                ConstruirTablero();
+                Turnojugador++;
+            }
+
+        ganador=Ganar();
+        if(ganador==true){
+            cout<<"felicidades gano el jugador "<<Turnojugador%2+1<<endl;
+        }
+
+        if(Turnojugador>9){
+            cout<<"es empate"<<endl;
+            break;
+        }
+
+        }while (ganador==false);
+    }
+/*--------------compu--------------------------------------------*/
+    else if(ModoDeJuego==1){
+        ConstruirTablero();
+
+        do{
+            do
+        {
+            if(Turnojugador%2!=0){
+        jugada=SeleccionarJugada();
+            }
+            else{
+                jugada=TurnoPC();
+            }
+        casillaOcupada=comprobarCasiilaOcupada(jugada);
+        if(casillaOcupada==true){
+            if(jugada==Turnojugador){
+            cout<<"otra vez ";
+            }
+        }
+        
+        } while (casillaOcupada==true);
+
+        if (casillaOcupada == false)
+            {
+                system("clear");
+                remplazarCasilla(jugada);
+                ConstruirTablero();
+                Turnojugador++;
+            }
+
+        ganador=Ganar();
+        if(ganador==true){
+            cout<<"felicidades gano el jugador "<<Turnojugador%2+1<<endl;
+        }
+
+        if(Turnojugador>9){
+            cout<<"es empate"<<endl;
+            break;
+        }
+
+        }while (ganador==false);
+
+    }
     
-ConstruirTablero();
-PosiblesJugadas();
+    
+    
+    
+
+
+
     return 0;
 }
 
@@ -45,7 +126,7 @@ void ConstruirTablero(){
             }
             else {
                 if(row<5){
-                cout<<" "<<tablero[x][y]<<" ";
+                cout<<" "<<AreaJuego[x][y]<<" ";
                   y++;
                 }
                 else{
@@ -72,29 +153,387 @@ void ConstruirTablero(){
 
 }
 
-char PosiblesJugadas(){
-    cout<<"OPCIONES DE JUEGO";
-    int contador=0;
-    string opciones="123456789";
+int SeleccionarJugada()
+{
+    int Jugada;
+    do
+    {
+        cout << "dame la jugada: ";
+        cin >> Jugada;
+    } while (Jugada < 0 && Jugada > 9);
 
-    for(int row=0;row<3;row++){
+    return Jugada;
+}
+
+bool comprobarCasiilaOcupada(int jugada){
+    int row=0,col=0;
+    if(jugada==1){
+        row=0;
+        col=0;
+    }
+    else if(jugada==2){
+        row=0;
+        col=1;
+    }
+    else if(jugada==3){
+        row=0;
+        col=2;
+    }
+    else if(jugada==4){
+        row=1;
+        col=0;
+    }
+     else if(jugada==5){
+        row=1;
+        col=1;
+    }
+    else if(jugada==6){
+        row=1;
+        col=2;
+    }
+    else if(jugada==7){
+        row=2;
+        col=0;
+    }
+    else if(jugada==8){
+        row=2;
+        col=1;
+    }
+    else if(jugada==9){
+        row=2;
+        col=2;
+    }
+    
+    if (AreaJuego[row][col] == 'X' || AreaJuego[row][col] == 'O')
+    {
+        return true; //  la casilla esta ocupada
+    }
+    else
+    {
+        return false;
+    }
+}
+
+void remplazarCasilla(int jugada){
+    int row=0, col=0;
+      if(jugada==1){
+        row=0;
+        col=0;
+    }
+    else if(jugada==2){
+        row=0;
+        col=1;
+    }
+    else if(jugada==3){
+        row=0;
+        col=2;
+    }
+    else if(jugada==4){
+        row=1;
+        col=0;
+    }
+     else if(jugada==5){
+        row=1;
+        col=1;
+    }
+    else if(jugada==6){
+        row=1;
+        col=2;
+    }
+    else if(jugada==7){
+        row=2;
+        col=0;
+    }
+    else if(jugada==8){
+        row=2;
+        col=1;
+    }
+    else if(jugada==9){
+        row=2;
+        col=2;
+    }
+
+       if (Turnojugador % 2 == 0)
+    {
+        AreaJuego[row][col] = 'O';
+    }
+    else
+    {
+        
+        AreaJuego[row][col] = 'X';
+    }
+}
+
+bool Ganar(){
+    if(AreaJuego[0][0]==AreaJuego[0][1]&&AreaJuego[0][0]==AreaJuego[0][2]&&AreaJuego[0][1]==AreaJuego[0][2]){
+        return true;
+    }
+    else if(AreaJuego[1][0]==AreaJuego[1][1]&&AreaJuego[1][0]==AreaJuego[1][2]&&AreaJuego[1][1]==AreaJuego[1][2]){
+        return true;
+    }
+    else if(AreaJuego[2][0]==AreaJuego[2][1]&&AreaJuego[2][0]==AreaJuego[2][2]&&AreaJuego[2][1]==AreaJuego[2][2]){
+        return true;
+    }
+    else if(AreaJuego[0][0]==AreaJuego[1][0]&&AreaJuego[0][0]==AreaJuego[2][0]&&AreaJuego[1][0]==AreaJuego[2][0]){
+        return true;
+    }
+    else if(AreaJuego[0][1]==AreaJuego[1][1]&&AreaJuego[0][1]==AreaJuego[2][1]&&AreaJuego[1][1]==AreaJuego[2][1]){
+        return true;
+    }
+    else if(AreaJuego[0][2]==AreaJuego[1][2]&&AreaJuego[0][2]==AreaJuego[2][2]&&AreaJuego[1][2]==AreaJuego[2][2]){
+        return true;
+    }
+    else if(AreaJuego[0][0]==AreaJuego[1][1]&&AreaJuego[0][0]==AreaJuego[2][2]&&AreaJuego[1][1]==AreaJuego[2][2]){
+        return true;
+    }
+    else if(AreaJuego[0][2]==AreaJuego[1][1]&&AreaJuego[0][2]==AreaJuego[2][0]&&AreaJuego[1][1]==AreaJuego[2][0]){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+}
+
+
+
+int TurnoPC(){
+    
+    int Jugada;
+    bool casillaocupada = false;
+    Jugada = MejorJugada(PC);
+    if (Jugada != -1)
+    {
+        return Jugada;
+    }
+
+    Jugada = MejorJugada(HUMANO);
+    if (Jugada != -1)
+    {
+        return Jugada;
+    }
+    while (casillaocupada == false)
+    {
+        casillaocupada = comprobarCasiilaOcupada(Jugada);
+        Jugada = 1 + rand() % 9; // En caso de que ninguno ni otro, aleatoria
+    }
+    return Jugada;
+}
+
+
+
+void ConstruirTableroImaginario(){
+     int x=0, y=0;
+    for(int row=0; row<6; row++){
         for (int col = 0; col < 3; col++)
         {
-            cout<<opciones[contador]<<")["<<row<<","<<col<<"]";
-            if(tablero[row][col]!=0){
-                cout<<"OCUPADO";
+            if(row<5 && row%2==1){
 
+                cout<<"___";
             }
-            cout<<endl;
-            contador++;
+            else {
+                if(row<5){
+                cout<<" "<<AreaJuego[x][y]<<" ";
+                  y++;
+                }
+                else{
+                    cout<<"   ";
+                }
+            }
+
+            if(col<2){
+                cout<<"|";
+            }
+
+            
         }
+        y=0;
+        if( row%2==0){
+            x++;
+        }
+
+
+        cout<<endl;
+    }
+
+
+}
+
+bool comprobarCasiilaOcupadaImaginaria(int jugada){
+    int row=0,col=0;
+    if(jugada==1){
+        row=0;
+        col=0;
+    }
+    else if(jugada==2){
+        row=0;
+        col=1;
+    }
+    else if(jugada==3){
+        row=0;
+        col=2;
+    }
+    else if(jugada==4){
+        row=1;
+        col=0;
+    }
+     else if(jugada==5){
+        row=1;
+        col=1;
+    }
+    else if(jugada==6){
+        row=1;
+        col=2;
+    }
+    else if(jugada==7){
+        row=2;
+        col=0;
+    }
+    else if(jugada==8){
+        row=2;
+        col=1;
+    }
+    else if(jugada==9){
+        row=2;
+        col=2;
+    }
+    
+    if (AreaJuego[row][col] == 'X' || AreaJuego[row][col] == 'O')
+    {
+        return true; //  la casilla esta ocupada
+    }
+    else
+    {
+        return false;
+    }
+
+}
+
+bool GanarImaginario(int jugada){
+    if(AreaJuego[0][0]==AreaJuego[0][1]&&AreaJuego[0][0]==AreaJuego[0][2]&&AreaJuego[0][1]==AreaJuego[0][2]){
+        return true;
+    }
+    else if(AreaJuego[1][0]==AreaJuego[1][1]&&AreaJuego[1][0]==AreaJuego[1][2]&&AreaJuego[1][1]==AreaJuego[1][2]){
+        return true;
+    }
+    else if(AreaJuego[2][0]==AreaJuego[2][1]&&AreaJuego[2][0]==AreaJuego[2][2]&&AreaJuego[2][1]==AreaJuego[2][2]){
+        return true;
+    }
+    else if(AreaJuego[0][0]==AreaJuego[1][0]&&AreaJuego[0][0]==AreaJuego[2][0]&&AreaJuego[1][0]==AreaJuego[2][0]){
+        return true;
+    }
+    else if(AreaJuego[0][1]==AreaJuego[1][1]&&AreaJuego[0][1]==AreaJuego[2][1]&&AreaJuego[1][1]==AreaJuego[2][1]){
+        return true;
+    }
+    else if(AreaJuego[0][2]==AreaJuego[1][2]&&AreaJuego[0][2]==AreaJuego[2][2]&&AreaJuego[1][2]==AreaJuego[2][2]){
+        return true;
+    }
+    else if(AreaJuego[0][0]==AreaJuego[1][1]&&AreaJuego[0][0]==AreaJuego[2][2]&&AreaJuego[1][1]==AreaJuego[2][2]){
+        return true;
+    }
+    else if(AreaJuego[0][2]==AreaJuego[1][1]&&AreaJuego[0][2]==AreaJuego[2][0]&&AreaJuego[1][1]==AreaJuego[2][0]){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+}
+
+void remplazarCasillaImaginario(int jugada){
+    int row=0, col=0;
+      if(jugada==1){
+        row=0;
+        col=0;
+    }
+    else if(jugada==2){
+        row=0;
+        col=1;
+    }
+    else if(jugada==3){
+        row=0;
+        col=2;
+    }
+    else if(jugada==4){
+        row=1;
+        col=0;
+    }
+     else if(jugada==5){
+        row=1;
+        col=1;
+    }
+    else if(jugada==6){
+        row=1;
+        col=2;
+    }
+    else if(jugada==7){
+        row=2;
+        col=0;
+    }
+    else if(jugada==8){
+        row=2;
+        col=1;
+    }
+    else if(jugada==9){
+        row=2;
+        col=2;
+    }
+
+       if (Turnojugador % 2 == 0)
+    {
+        AreaJuego[row][col] = 'O';
+    }
+    else
+    {
+        
+        AreaJuego[row][col] = 'X';
+    }
+
+}
+
+
+int MejorJugada(char jugador){
+    bool Casillaocupada = false;
+    bool Ganador = false;
+    int JugadaPC = 0;
+
+    ConstruirTableroImaginario();
+
+    if(jugador=='X'){
+         do
+        {
+            JugadaPC++;
+            Casillaocupada = comprobarCasiilaOcupadaImaginaria(JugadaPC);
+            if (Casillaocupada == false)
+            {
+                remplazarCasillaImaginario(JugadaPC);
+                Ganador = GanarImaginario(JugadaPC);
+            }
+         ConstruirTableroImaginario();
+        } while (JugadaPC <=9 && Ganador == false);
         
     }
-    char jugada;
-    cout<<"elegi una juegada: ";cin>>jugada;
+
+
+    else
+    {
+        do
+        {
+              JugadaPC++;
+            Casillaocupada = comprobarCasiilaOcupadaImaginaria(JugadaPC);
+            if (Casillaocupada == false)
+            {
+                remplazarCasillaImaginario(JugadaPC);
+                Ganador = GanarImaginario(JugadaPC);
+            }
+            void ConstruirTableroImaginario();
+        } while (JugadaPC <= 9 && Ganador == false);
+        
+    }
+    if (JugadaPC >= 10)
+    {
+        JugadaPC=-1;
+    }
+    return JugadaPC;
     
-
-
-
-
 }

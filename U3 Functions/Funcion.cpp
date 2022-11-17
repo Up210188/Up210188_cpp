@@ -12,6 +12,7 @@ Description:get the maximum and minimum value
 using namespace std;
 int getMaxVal(int num1, int num2);
 int getMinVal(int num1, int num2);
+
 int main(){
     int numero1,numero2,valorMax,valorMIn;
 
@@ -22,8 +23,7 @@ int main(){
     valorMIn=getMinVal(numero1,numero2);
     cout<<"el numero mayor es: "<<valorMax<<endl;
 
-    cout<<"el numero menor es: "<<valorMIn;
-
+    cout<<"el numero menor es: "<<valorMIn<<endl;
 
 
     

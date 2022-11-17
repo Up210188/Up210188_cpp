@@ -16,8 +16,8 @@ bool Ganar();
 bool GanarImaginario(int jugada);
 int MejorJugada(char jugador);
 int TurnoPC();
-const char PC = 'O';
-const char HUMANO = 'X';
+char PC ='O';
+char HUMANO ='X';
 int main(){
     int jugada;
     bool casillaOcupada=true;
@@ -62,8 +62,8 @@ int main(){
 
         }while (ganador==false);
     }
-
-  /* else if(ModoDeJuego==1){
+/*--------------compu--------------------------------------------*/
+    else if(ModoDeJuego==1){
         ConstruirTablero();
 
         do{
@@ -77,7 +77,9 @@ int main(){
             }
         casillaOcupada=comprobarCasiilaOcupada(jugada);
         if(casillaOcupada==true){
+            if(jugada==Turnojugador){
             cout<<"otra vez ";
+            }
         }
         
         } while (casillaOcupada==true);
@@ -104,10 +106,10 @@ int main(){
 
     }
     
-    */
     
     
     
+
 
 
     return 0;
@@ -294,7 +296,7 @@ bool Ganar(){
 }
 
 
-/*
+
 int TurnoPC(){
     
     int Jugada;
@@ -317,7 +319,7 @@ int TurnoPC(){
     }
     return Jugada;
 }
-*/
+
 
 
 void ConstruirTableroImaginario(){
@@ -407,7 +409,7 @@ bool comprobarCasiilaOcupadaImaginaria(int jugada){
 
 }
 
-bool GanarImaginario(){
+bool GanarImaginario(int jugada){
     if(AreaJuego[0][0]==AreaJuego[0][1]&&AreaJuego[0][0]==AreaJuego[0][2]&&AreaJuego[0][1]==AreaJuego[0][2]){
         return true;
     }
@@ -507,8 +509,9 @@ int MejorJugada(char jugador){
                 remplazarCasillaImaginario(JugadaPC);
                 Ganador = GanarImaginario(JugadaPC);
             }
-            ConstruirTableroImaginario();
+         ConstruirTableroImaginario();
         } while (JugadaPC <=9 && Ganador == false);
+        
     }
 
 
@@ -523,15 +526,16 @@ int MejorJugada(char jugador){
                 remplazarCasillaImaginario(JugadaPC);
                 Ganador = GanarImaginario(JugadaPC);
             }
-            ConstruirTableroImaginario();
+            void ConstruirTableroImaginario();
         } while (JugadaPC <= 9 && Ganador == false);
         
     }
     if (JugadaPC >= 10)
     {
-        JugadaPC= -1;
+        JugadaPC=-1;
     }
     return JugadaPC;
     
 }
+
 
