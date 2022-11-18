@@ -24,7 +24,7 @@ int main(){
     bool ganador=false;
     int ModoDeJuego=0;
 
-    cout<<" "<<"\033[031m"<<PC<<"\033[0m"<<" ";
+    
 
     cout<<"Seleccione el modo de juego: solo=1 multiplayer=2 ";cin>>ModoDeJuego;
 
