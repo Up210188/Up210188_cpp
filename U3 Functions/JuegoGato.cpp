@@ -11,13 +11,14 @@ int Turnojugador=1;
 bool comprobarCasiilaOcupada(int jugada);
 bool comprobarCasiilaOcupadaImaginaria(int jugada);
 void remplazarCasilla(int jugada);
-void remplazarCasillaImaginario(int jugada);
+void remplazarCasillaImaginario(int jugada, char juador);
 bool Ganar();
 bool GanarImaginario(int jugada);
 int MejorJugada(char jugador);
 int TurnoPC();
 char PC ='O';
 char HUMANO ='X';
+char Areadejuegoimaginario[3][3];
 int main(){
     int jugada;
     bool casillaOcupada=true;
@@ -204,7 +205,7 @@ bool comprobarCasiilaOcupada(int jugada){
         col=2;
     }
     
-    if (AreaJuego[row][col] == 'X' || AreaJuego[row][col] == 'O')
+    if (Areadejuegoimaginario[row][col] == 'X' || Areadejuegoimaginario[row][col] == 'O')
     {
         return true; //  la casilla esta ocupada
     }
@@ -324,39 +325,13 @@ int TurnoPC(){
 
 void ConstruirTableroImaginario(){
      int x=0, y=0;
-    for(int row=0; row<6; row++){
+    for(int row=0; row<3; row++){
         for (int col = 0; col < 3; col++)
         {
-            if(row<5 && row%2==1){
-
-                cout<<"___";
-            }
-            else {
-                if(row<5){
-                cout<<" "<<AreaJuego[x][y]<<" ";
-                  y++;
-                }
-                else{
-                    cout<<"   ";
-                }
-            }
-
-            if(col<2){
-                cout<<"|";
-            }
-
-            
-        }
-        y=0;
-        if( row%2==0){
-            x++;
+            Areadejuegoimaginario[row][col]=AreaJuego[row][col];
         }
 
-
-        cout<<endl;
-    }
-
-
+}
 }
 
 bool comprobarCasiilaOcupadaImaginaria(int jugada){
@@ -398,7 +373,7 @@ bool comprobarCasiilaOcupadaImaginaria(int jugada){
         col=2;
     }
     
-    if (AreaJuego[row][col] == 'X' || AreaJuego[row][col] == 'O')
+    if (Areadejuegoimaginario[row][col] == 'X' || Areadejuegoimaginario[row][col] == 'O')
     {
         return true; //  la casilla esta ocupada
     }
@@ -410,28 +385,28 @@ bool comprobarCasiilaOcupadaImaginaria(int jugada){
 }
 
 bool GanarImaginario(int jugada){
-    if(AreaJuego[0][0]==AreaJuego[0][1]&&AreaJuego[0][0]==AreaJuego[0][2]&&AreaJuego[0][1]==AreaJuego[0][2]){
+    if(Areadejuegoimaginario[0][0]==Areadejuegoimaginario[0][1]&&Areadejuegoimaginario[0][0]==Areadejuegoimaginario[0][2]&&Areadejuegoimaginario[0][1]==Areadejuegoimaginario[0][2]){
         return true;
     }
-    else if(AreaJuego[1][0]==AreaJuego[1][1]&&AreaJuego[1][0]==AreaJuego[1][2]&&AreaJuego[1][1]==AreaJuego[1][2]){
+    else if(Areadejuegoimaginario[1][0]==Areadejuegoimaginario[1][1]&&Areadejuegoimaginario[1][0]==Areadejuegoimaginario[1][2]&&Areadejuegoimaginario[1][1]==Areadejuegoimaginario[1][2]){
         return true;
     }
-    else if(AreaJuego[2][0]==AreaJuego[2][1]&&AreaJuego[2][0]==AreaJuego[2][2]&&AreaJuego[2][1]==AreaJuego[2][2]){
+    else if(Areadejuegoimaginario[2][0]==Areadejuegoimaginario[2][1]&&Areadejuegoimaginario[2][0]==Areadejuegoimaginario[2][2]&&Areadejuegoimaginario[2][1]==Areadejuegoimaginario[2][2]){
         return true;
     }
-    else if(AreaJuego[0][0]==AreaJuego[1][0]&&AreaJuego[0][0]==AreaJuego[2][0]&&AreaJuego[1][0]==AreaJuego[2][0]){
+    else if(Areadejuegoimaginario[0][0]==Areadejuegoimaginario[1][0]&&Areadejuegoimaginario[0][0]==Areadejuegoimaginario[2][0]&&Areadejuegoimaginario[1][0]==Areadejuegoimaginario[2][0]){
         return true;
     }
-    else if(AreaJuego[0][1]==AreaJuego[1][1]&&AreaJuego[0][1]==AreaJuego[2][1]&&AreaJuego[1][1]==AreaJuego[2][1]){
+    else if(Areadejuegoimaginario[0][1]==Areadejuegoimaginario[1][1]&&Areadejuegoimaginario[0][1]==Areadejuegoimaginario[2][1]&&Areadejuegoimaginario[1][1]==Areadejuegoimaginario[2][1]){
         return true;
     }
-    else if(AreaJuego[0][2]==AreaJuego[1][2]&&AreaJuego[0][2]==AreaJuego[2][2]&&AreaJuego[1][2]==AreaJuego[2][2]){
+    else if(Areadejuegoimaginario[0][2]==Areadejuegoimaginario[1][2]&&Areadejuegoimaginario[0][2]==Areadejuegoimaginario[2][2]&&Areadejuegoimaginario[1][2]==Areadejuegoimaginario[2][2]){
         return true;
     }
-    else if(AreaJuego[0][0]==AreaJuego[1][1]&&AreaJuego[0][0]==AreaJuego[2][2]&&AreaJuego[1][1]==AreaJuego[2][2]){
+    else if(Areadejuegoimaginario[0][0]==Areadejuegoimaginario[1][1]&&Areadejuegoimaginario[0][0]==Areadejuegoimaginario[2][2]&&Areadejuegoimaginario[1][1]==Areadejuegoimaginario[2][2]){
         return true;
     }
-    else if(AreaJuego[0][2]==AreaJuego[1][1]&&AreaJuego[0][2]==AreaJuego[2][0]&&AreaJuego[1][1]==AreaJuego[2][0]){
+    else if(Areadejuegoimaginario[0][2]==Areadejuegoimaginario[1][1]&&Areadejuegoimaginario[0][2]==Areadejuegoimaginario[2][0]&&Areadejuegoimaginario[1][1]==Areadejuegoimaginario[2][0]){
         return true;
     }
     else{
@@ -440,7 +415,7 @@ bool GanarImaginario(int jugada){
 
 }
 
-void remplazarCasillaImaginario(int jugada){
+void remplazarCasillaImaginario(int jugada, char jugador){
     int row=0, col=0;
       if(jugada==1){
         row=0;
@@ -479,14 +454,14 @@ void remplazarCasillaImaginario(int jugada){
         col=2;
     }
 
-       if (Turnojugador % 2 == 0)
+    if (jugador== PC)
     {
-        AreaJuego[row][col] = 'O';
+        Areadejuegoimaginario[row][col] = 'O';
     }
     else
     {
         
-        AreaJuego[row][col] = 'X';
+        Areadejuegoimaginario[row][col] = 'X';
     }
 
 }
@@ -499,14 +474,14 @@ int MejorJugada(char jugador){
 
     ConstruirTableroImaginario();
 
-    if(jugador=='X'){
+    if(jugador==PC){
          do
         {
             JugadaPC++;
             Casillaocupada = comprobarCasiilaOcupadaImaginaria(JugadaPC);
             if (Casillaocupada == false)
             {
-                remplazarCasillaImaginario(JugadaPC);
+                remplazarCasillaImaginario(JugadaPC,PC);
                 Ganador = GanarImaginario(JugadaPC);
             }
          ConstruirTableroImaginario();
@@ -523,10 +498,10 @@ int MejorJugada(char jugador){
             Casillaocupada = comprobarCasiilaOcupadaImaginaria(JugadaPC);
             if (Casillaocupada == false)
             {
-                remplazarCasillaImaginario(JugadaPC);
+                remplazarCasillaImaginario(JugadaPC,HUMANO);
                 Ganador = GanarImaginario(JugadaPC);
             }
-            void ConstruirTableroImaginario();
+        ConstruirTableroImaginario();
         } while (JugadaPC <= 9 && Ganador == false);
         
     }
