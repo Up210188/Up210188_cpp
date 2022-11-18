@@ -127,9 +127,20 @@ void ConstruirTablero(){
             }
             else {
                 if(row<5){
-                cout<<" "<<AreaJuego[x][y]<<" ";
-                  y++;
-                }
+
+                    if(AreaJuego[x][y]=='X'){
+                    cout<<" "<<"\033[0;31m"<<AreaJuego[x][y]<<"\033[0m"<<" ";
+                    y++;}
+                    else if(AreaJuego[x][y]=='O'){
+                        cout<<" "<<AreaJuego[x][y]<<" ";
+                    y++;}
+
+                    else{
+                        cout<<" "<<AreaJuego[x][y]<<" ";
+                    y++;}
+
+                    }
+                    
                 else{
                     cout<<"   ";
                 }
