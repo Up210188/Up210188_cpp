@@ -46,7 +46,7 @@ To play you need to follow the following steps:
 
 ## ***Flowchart***
 
-<img alt="Diagrama" height="500" src="../Diagrama en blanco (1).png"/> 
+<img alt="Diagrama" height="500" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/Diagrama%20en%20blanco%20(1).png"/> 
 
 ## ***Explanation of a game execution***
 
