@@ -46,6 +46,8 @@ To play you need to follow the following steps:
 
 ## ***Flowchart***
 
+<img alt="Diagrama" height="500" src="../Diagrama en blanco (1).png"/> 
+
 ## ***Explanation of a game execution***
 
 Step 1: Ask the game mode you want.
