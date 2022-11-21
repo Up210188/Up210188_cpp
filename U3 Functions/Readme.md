@@ -48,27 +48,27 @@ To play you need to follow the following steps:
 
 ## ***Explanation of a game execution***
 
-Step 1:
+Step 1: Ask the game mode you want.
 
 <img alt="1" height="70" src="../imagenes/U3.2.png"/> 
 
-Step 2:
+Step 2: Select game mode 1, the board is built and the move is requested
 
 <img alt="2" height="150" src="../imagenes/U3.3.png"/> 
 
-Step 3:
+Step 3: Select move 1 and the PC chose move 2.
 
 <img alt="3" height="130" src="../imagenes/U3.4.png"/> 
 
-Step 4:
+Step 4: Select move 4 and the PC chose move 7.
 
 <img alt="4" height="130" src="../imagenes/U3.5.png"/> 
 
-Step 5:
+Step 5: Select move 5 and the PC chose move 6.
 
 <img alt="5" height="130" src="../imagenes/U3.6.png"/> 
 
-Step 6:
+Step 6: Finally select move 9 and I win
 
 <img alt="6" height="120" src="../imagenes/U3.7.png"/> 
 
