@@ -25,8 +25,8 @@ int main()
     bool casillaOcupada = true;
     bool ganador = false;
     int ModoDeJuego = 0;
-
-    cout << "Seleccione el modo de juego: solo=1 multiplayer=2 ";
+    
+    cout << "1-Single player"<<endl<< "2-Multiplayer "<<endl<<"Select game mode: ";
     cin >> ModoDeJuego;
 
     if (ModoDeJuego == 2)
@@ -57,12 +57,12 @@ int main()
             ganador = Ganar();
             if (ganador == true)
             {
-                cout << "felicidades gano el jugador " << Turnojugador % 2 + 1 << endl;
+                cout << "CONGRATULATIONS THE PLAYER " << Turnojugador % 2 + 1 <<" WON "<< endl;
             }
 
             if (Turnojugador > 9)
             {
-                cout << "es empate" << endl;
+                cout << "IS A TIE" << endl;
                 break;
             }
 
@@ -89,7 +89,7 @@ int main()
                 if (casillaOcupada == true)
                 {
 
-                    cout << "otra vez ";
+                    cout << "AGAIN, ";
                 }
 
             } while (casillaOcupada == true);
@@ -105,18 +105,23 @@ int main()
             ganador = Ganar();
             if (ganador == true)
             {
-                cout << "felicidades gano el jugador " << Turnojugador % 2 + 1 << endl;
+                cout << "CONGRATULATIONS THE PLAYER " << Turnojugador % 2 + 1 <<" WON "<< endl;
             }
 
             if (Turnojugador > 9)
             {
-                cout << "es empate" << endl;
+                cout << "IS A TIE" << endl;
                 break;
             }
 
         } while (ganador == false);
+    
     }
 
+    else{
+        cout<<"por favor seleccione el modo de juego"<<endl;
+    }
+     
     return 0;
 }
 
@@ -185,7 +190,7 @@ int SeleccionarJugada()
     int Jugada;
     do
     {
-        cout << "dame la jugada: ";
+        cout << "GIVE ME THE PLAY:  ";
         cin >> Jugada;
     } while (Jugada < 1 && Jugada > 10);
 
