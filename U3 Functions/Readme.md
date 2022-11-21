@@ -50,11 +50,11 @@ To play you need to follow the following steps:
 
 Step 1:
 
-<img alt="1" height="100" src="../imagenes/U3.2.png"/> 
+<img alt="1" height="70" src="../imagenes/U3.2.png"/> 
 
 Step 2:
 
-<img alt="2" height="70" src="../imagenes/U3.3.png"/> 
+<img alt="2" height="130" src="../imagenes/U3.3.png"/> 
 
 Step 3:
 
@@ -70,7 +70,7 @@ Step 5:
 
 Step 6:
 
-<img alt="6" height="130" src="../imagenes/U3.7.png"/> 
+<img alt="6" height="120" src="../imagenes/U3.7.png"/> 
 
 
 
