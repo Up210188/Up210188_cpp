@@ -25,7 +25,7 @@ int main()
     bool casillaOcupada = true;
     bool ganador = false;
     int ModoDeJuego = 0;
-    
+    do{
     cout << "1-Single player"<<endl<< "2-Multiplayer "<<endl<<"Select game mode: ";
     cin >> ModoDeJuego;
 
@@ -121,6 +121,9 @@ int main()
     else{
         cout<<"por favor seleccione el modo de juego"<<endl;
     }
+    }while (ModoDeJuego!=1 && ModoDeJuego!=2);
+     
+    
      
     return 0;
 }
