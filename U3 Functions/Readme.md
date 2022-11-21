@@ -4,6 +4,7 @@
 
 <img alt="funciones" height="300" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/functions-in-c-featured-image.jpg"/> 
 
+<div align="left"> 
 ## ***INDEX***
 
 ## ***DESCRIPTION***
