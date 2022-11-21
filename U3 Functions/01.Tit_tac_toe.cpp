@@ -119,7 +119,7 @@ int main()
     }
 
     else{
-        cout<<"por favor seleccione el modo de juego"<<endl;
+        cout<<"PLEASE SELECT THE GAME MODE"<<endl;
     }
     }while (ModoDeJuego!=1 && ModoDeJuego!=2);
      
