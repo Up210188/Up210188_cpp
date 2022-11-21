@@ -17,6 +17,8 @@ In this unit we learned about c++ functions such as function types, how to call 
 
 <img src="../imagenes/Tic_Tac_Toe.gif" height="200" width="200">
 
+<div align="center"> 
+
 ## ***EXECUTION AND USE***
 To play you need to follow the following steps:
 1.-Compile and run the program.
