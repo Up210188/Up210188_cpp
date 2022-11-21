@@ -54,23 +54,23 @@ Step 1:
 
 Step 2:
 
-<img alt="2" height="100" src="../imagenes/U3.3.png"/> 
+<img alt="2" height="70" src="../imagenes/U3.3.png"/> 
 
 Step 3:
 
-<img alt="3" height="100" src="../imagenes/U3.4.png"/> 
+<img alt="3" height="130" src="../imagenes/U3.4.png"/> 
 
 Step 4:
 
-<img alt="4" height="100" src="../imagenes/U3.5.png"/> 
+<img alt="4" height="130" src="../imagenes/U3.5.png"/> 
 
 Step 5:
 
-<img alt="5" height="100" src="../imagenes/U3.6.png"/> 
+<img alt="5" height="130" src="../imagenes/U3.6.png"/> 
 
 Step 6:
 
-<img alt="6" height="100" src="../imagenes/U3.7.png"/> 
+<img alt="6" height="130" src="../imagenes/U3.7.png"/> 
 
 
 
