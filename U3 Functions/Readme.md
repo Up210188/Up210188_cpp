@@ -48,7 +48,7 @@ To play you need to follow the following steps:
 
 <div align="center"> 
 
-<img alt="Diagrama" height="1500" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/Diagrama%20en%20blanco%20(1).png"/> 
+<img alt="Diagrama" height="1000" src="https://github.com/Up210188/Up210188_cpp/blob/main/imagenes/Diagrama%20en%20blanco%20(1).png"/> 
 
 <div align="left"> 
 
