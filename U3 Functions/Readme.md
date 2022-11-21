@@ -11,6 +11,12 @@
 ## ***DESCRIPTION***
 In this unit we learned about c++ functions such as function types, how to call a function, etc. To better understand the subject we play the tic tac toe game.
 
+# Tic tac toe 
+
+<img src="../imagenes/Tic_Tac_Toe.gif" height="200" width="200">
+
+
+
 
 
 
