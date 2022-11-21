@@ -54,7 +54,7 @@ Step 1:
 
 Step 2:
 
-<img alt="2" height="130" src="../imagenes/U3.3.png"/> 
+<img alt="2" height="150" src="../imagenes/U3.3.png"/> 
 
 Step 3:
 
