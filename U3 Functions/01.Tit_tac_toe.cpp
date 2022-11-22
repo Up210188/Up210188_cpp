@@ -25,106 +25,107 @@ int main()
     bool casillaOcupada = true;
     bool ganador = false;
     int ModoDeJuego = 0;
-    do{
-    cout << "1-Single player"<<endl<< "2-Multiplayer "<<endl<<"Select game mode: ";
-    cin >> ModoDeJuego;
-
-    if (ModoDeJuego == 2)
+    do
     {
-        ConstruirTablero();
+        cout << "1-Single player" << endl
+             << "2-Multiplayer " << endl
+             << "Select game mode: ";
+        cin >> ModoDeJuego;
 
-        do
+        if (ModoDeJuego == 2)
         {
+            ConstruirTablero();
+
             do
             {
-                Move = SeleccionarMove();
-                casillaOcupada = comprobarCasiilaOcupada(Move);
-                if (casillaOcupada == true)
-                {
-                    cout << "otra vez ";
-                }
-
-            } while (casillaOcupada == true);
-
-            if (casillaOcupada == false)
-            {
-                system("clear");
-                remplazarCasilla(Move);
-                ConstruirTablero();
-                Turnojugador++;
-            }
-
-            ganador = Ganar();
-            if (ganador == true)
-            {
-                cout << "CONGRATULATIONS THE PLAYER " << Turnojugador % 2 + 1 <<" WON "<< endl;
-            }
-
-            if (Turnojugador > 9)
-            {
-                cout << "IS A TIE" << endl;
-                break;
-            }
-
-        } while (ganador == false);
-    }
-    /*--------------compu--------------------------------------------*/
-    else if (ModoDeJuego == 1)
-    {
-        ConstruirTablero();
-
-        do
-        {
-            do
-            {
-                if (Turnojugador % 2 != 0)
+                do
                 {
                     Move = SeleccionarMove();
-                }
-                else
+                    casillaOcupada = comprobarCasiilaOcupada(Move);
+                    if (casillaOcupada == true)
+                    {
+                        cout << "otra vez ";
+                    }
+
+                } while (casillaOcupada == true);
+
+                if (casillaOcupada == false)
                 {
-                    Move = TurnoPC();
+                    system("clear");
+                    remplazarCasilla(Move);
+                    ConstruirTablero();
+                    Turnojugador++;
                 }
-                casillaOcupada = comprobarCasiilaOcupada(Move);
-                if (casillaOcupada == true)
+
+                ganador = Ganar();
+                if (ganador == true)
                 {
-
-                    cout << "AGAIN, ";
+                    cout << "CONGRATULATIONS THE PLAYER " << Turnojugador % 2 + 1 << " WON " << endl;
                 }
 
-            } while (casillaOcupada == true);
+                if (Turnojugador > 9)
+                {
+                    cout << "IS A TIE" << endl;
+                    break;
+                }
 
-            if (casillaOcupada == false)
+            } while (ganador == false);
+        }
+        /*--------------compu--------------------------------------------*/
+        else if (ModoDeJuego == 1)
+        {
+            ConstruirTablero();
+
+            do
             {
-                system("clear");
-                remplazarCasilla(Move);
-                ConstruirTablero();
-                Turnojugador++;
-            }
+                do
+                {
+                    if (Turnojugador % 2 != 0)
+                    {
+                        Move = SeleccionarMove();
+                    }
+                    else
+                    {
+                        Move = TurnoPC();
+                    }
+                    casillaOcupada = comprobarCasiilaOcupada(Move);
+                    if (casillaOcupada == true)
+                    {
 
-            ganador = Ganar();
-            if (ganador == true)
-            {
-                cout << "CONGRATULATIONS THE PLAYER " << Turnojugador % 2 + 1 <<" WON "<< endl;
-            }
+                        cout << "AGAIN, ";
+                    }
 
-            if (Turnojugador > 9)
-            {
-                cout << "IS A TIE" << endl;
-                break;
-            }
+                } while (casillaOcupada == true);
 
-        } while (ganador == false);
-    
-    }
+                if (casillaOcupada == false)
+                {
+                    system("clear");
+                    remplazarCasilla(Move);
+                    ConstruirTablero();
+                    Turnojugador++;
+                }
 
-    else{
-        cout<<"PLEASE SELECT THE GAME MODE"<<endl;
-    }
-    }while (ModoDeJuego!=1 && ModoDeJuego!=2);
-     
-    
-     
+                ganador = Ganar();
+                if (ganador == true)
+                {
+                    cout << "CONGRATULATIONS THE PLAYER " << Turnojugador % 2 + 1 << " WON " << endl;
+                }
+
+                if (Turnojugador > 9)
+                {
+                    cout << "IS A TIE" << endl;
+                    break;
+                }
+
+            } while (ganador == false);
+        }
+
+        else
+        {
+            cout << "PLEASE SELECT THE GAME MODE" << endl;
+        }
+    } while (ModoDeJuego != 1 && ModoDeJuego != 2);
+
     return 0;
 }
 
