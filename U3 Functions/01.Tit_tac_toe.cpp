@@ -4,24 +4,24 @@
 using namespace std;
 
 void ConstruirTablero();
-int SeleccionarJugada();
+int SeleccionarMove();
 char AreaJuego[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
 void ConstruirTableroImaginario();
 int Turnojugador = 1;
-bool comprobarCasiilaOcupada(int jugada);
-bool comprobarCasiilaOcupadaImaginaria(int jugada);
-void remplazarCasilla(int jugada);
-void remplazarCasillaImaginario(int jugada, char juador);
+bool comprobarCasiilaOcupada(int Move);
+bool comprobarCasiilaOcupadaImaginaria(int Move);
+void remplazarCasilla(int Move);
+void remplazarCasillaImaginario(int Move, char juador);
 bool Ganar();
-bool GanarImaginario(int jugada);
-int MejorJugada(char jugador);
+bool GanarImaginario(int Move);
+int MejorMove(char jugador);
 int TurnoPC();
 char PC = 'O';
 char HUMANO = 'X';
 char Areadejuegoimaginario[3][3];
 int main()
 {
-    int jugada;
+    int Move;
     bool casillaOcupada = true;
     bool ganador = false;
     int ModoDeJuego = 0;
@@ -37,8 +37,8 @@ int main()
         {
             do
             {
-                jugada = SeleccionarJugada();
-                casillaOcupada = comprobarCasiilaOcupada(jugada);
+                Move = SeleccionarMove();
+                casillaOcupada = comprobarCasiilaOcupada(Move);
                 if (casillaOcupada == true)
                 {
                     cout << "otra vez ";
@@ -49,7 +49,7 @@ int main()
             if (casillaOcupada == false)
             {
                 system("clear");
-                remplazarCasilla(jugada);
+                remplazarCasilla(Move);
                 ConstruirTablero();
                 Turnojugador++;
             }
@@ -79,13 +79,13 @@ int main()
             {
                 if (Turnojugador % 2 != 0)
                 {
-                    jugada = SeleccionarJugada();
+                    Move = SeleccionarMove();
                 }
                 else
                 {
-                    jugada = TurnoPC();
+                    Move = TurnoPC();
                 }
-                casillaOcupada = comprobarCasiilaOcupada(jugada);
+                casillaOcupada = comprobarCasiilaOcupada(Move);
                 if (casillaOcupada == true)
                 {
 
@@ -97,7 +97,7 @@ int main()
             if (casillaOcupada == false)
             {
                 system("clear");
-                remplazarCasilla(jugada);
+                remplazarCasilla(Move);
                 ConstruirTablero();
                 Turnojugador++;
             }
@@ -188,62 +188,62 @@ void ConstruirTablero()
     }
 }
 
-int SeleccionarJugada()
+int SeleccionarMove()
 {
-    int Jugada;
+    int Move;
     do
     {
         cout << "GIVE ME THE PLAY:  ";
-        cin >> Jugada;
-    } while (Jugada < 1 && Jugada > 10);
+        cin >> Move;
+    } while (Move < 1 && Move > 10);
 
-    return Jugada;
+    return Move;
 }
 
-bool comprobarCasiilaOcupada(int jugada)
+bool comprobarCasiilaOcupada(int Move)
 {
     int row = 0, col = 0;
-    if (jugada == 1)
+    if (Move == 1)
     {
         row = 0;
         col = 0;
     }
-    else if (jugada == 2)
+    else if (Move == 2)
     {
         row = 0;
         col = 1;
     }
-    else if (jugada == 3)
+    else if (Move == 3)
     {
         row = 0;
         col = 2;
     }
-    else if (jugada == 4)
+    else if (Move == 4)
     {
         row = 1;
         col = 0;
     }
-    else if (jugada == 5)
+    else if (Move == 5)
     {
         row = 1;
         col = 1;
     }
-    else if (jugada == 6)
+    else if (Move == 6)
     {
         row = 1;
         col = 2;
     }
-    else if (jugada == 7)
+    else if (Move == 7)
     {
         row = 2;
         col = 0;
     }
-    else if (jugada == 8)
+    else if (Move == 8)
     {
         row = 2;
         col = 1;
     }
-    else if (jugada == 9)
+    else if (Move == 9)
     {
         row = 2;
         col = 2;
@@ -259,50 +259,50 @@ bool comprobarCasiilaOcupada(int jugada)
     }
 }
 
-void remplazarCasilla(int jugada)
+void remplazarCasilla(int Move)
 {
     int row = 0, col = 0;
-    if (jugada == 1)
+    if (Move == 1)
     {
         row = 0;
         col = 0;
     }
-    else if (jugada == 2)
+    else if (Move == 2)
     {
         row = 0;
         col = 1;
     }
-    else if (jugada == 3)
+    else if (Move == 3)
     {
         row = 0;
         col = 2;
     }
-    else if (jugada == 4)
+    else if (Move == 4)
     {
         row = 1;
         col = 0;
     }
-    else if (jugada == 5)
+    else if (Move == 5)
     {
         row = 1;
         col = 1;
     }
-    else if (jugada == 6)
+    else if (Move == 6)
     {
         row = 1;
         col = 2;
     }
-    else if (jugada == 7)
+    else if (Move == 7)
     {
         row = 2;
         col = 0;
     }
-    else if (jugada == 8)
+    else if (Move == 8)
     {
         row = 2;
         col = 1;
     }
-    else if (jugada == 9)
+    else if (Move == 9)
     {
         row = 2;
         col = 2;
@@ -362,25 +362,25 @@ bool Ganar()
 int TurnoPC()
 {
 
-    int Jugada;
+    int Move;
     bool casillaocupada = false;
-    Jugada = MejorJugada(PC);
-    if (Jugada != -1)
+    Move = MejorMove(PC);
+    if (Move != -1)
     {
-        return Jugada;
+        return Move;
     }
 
-    Jugada = MejorJugada(HUMANO);
-    if (Jugada != -1)
+    Move = MejorMove(HUMANO);
+    if (Move != -1)
     {
-        return Jugada;
+        return Move;
     }
     while (casillaocupada == false)
     {
-        casillaocupada = comprobarCasiilaOcupada(Jugada);
-        Jugada = 1 + rand() % 9; // En caso de que ninguno ni otro, aleatoria
+        casillaocupada = comprobarCasiilaOcupada(Move);
+        Move = 1 + rand() % 9; // En caso de que ninguno ni otro, aleatoria
     }
-    return Jugada;
+    return Move;
 }
 
 void ConstruirTableroImaginario()
@@ -395,50 +395,50 @@ void ConstruirTableroImaginario()
     }
 }
 
-bool comprobarCasiilaOcupadaImaginaria(int jugada)
+bool comprobarCasiilaOcupadaImaginaria(int Move)
 {
     int row = 0, col = 0;
-    if (jugada == 1)
+    if (Move == 1)
     {
         row = 0;
         col = 0;
     }
-    else if (jugada == 2)
+    else if (Move == 2)
     {
         row = 0;
         col = 1;
     }
-    else if (jugada == 3)
+    else if (Move == 3)
     {
         row = 0;
         col = 2;
     }
-    else if (jugada == 4)
+    else if (Move == 4)
     {
         row = 1;
         col = 0;
     }
-    else if (jugada == 5)
+    else if (Move == 5)
     {
         row = 1;
         col = 1;
     }
-    else if (jugada == 6)
+    else if (Move == 6)
     {
         row = 1;
         col = 2;
     }
-    else if (jugada == 7)
+    else if (Move == 7)
     {
         row = 2;
         col = 0;
     }
-    else if (jugada == 8)
+    else if (Move == 8)
     {
         row = 2;
         col = 1;
     }
-    else if (jugada == 9)
+    else if (Move == 9)
     {
         row = 2;
         col = 2;
@@ -454,7 +454,7 @@ bool comprobarCasiilaOcupadaImaginaria(int jugada)
     }
 }
 
-bool GanarImaginario(int jugada)
+bool GanarImaginario(int Move)
 {
     if (Areadejuegoimaginario[0][0] == Areadejuegoimaginario[0][1] && Areadejuegoimaginario[0][0] == Areadejuegoimaginario[0][2] && Areadejuegoimaginario[0][1] == Areadejuegoimaginario[0][2])
     {
@@ -494,50 +494,50 @@ bool GanarImaginario(int jugada)
     }
 }
 
-void remplazarCasillaImaginario(int jugada, char jugador)
+void remplazarCasillaImaginario(int Move, char jugador)
 {
     int row = 0, col = 0;
-    if (jugada == 1)
+    if (Move == 1)
     {
         row = 0;
         col = 0;
     }
-    else if (jugada == 2)
+    else if (Move == 2)
     {
         row = 0;
         col = 1;
     }
-    else if (jugada == 3)
+    else if (Move == 3)
     {
         row = 0;
         col = 2;
     }
-    else if (jugada == 4)
+    else if (Move == 4)
     {
         row = 1;
         col = 0;
     }
-    else if (jugada == 5)
+    else if (Move == 5)
     {
         row = 1;
         col = 1;
     }
-    else if (jugada == 6)
+    else if (Move == 6)
     {
         row = 1;
         col = 2;
     }
-    else if (jugada == 7)
+    else if (Move == 7)
     {
         row = 2;
         col = 0;
     }
-    else if (jugada == 8)
+    else if (Move == 8)
     {
         row = 2;
         col = 1;
     }
-    else if (jugada == 9)
+    else if (Move == 9)
     {
         row = 2;
         col = 2;
@@ -554,11 +554,11 @@ void remplazarCasillaImaginario(int jugada, char jugador)
     }
 }
 
-int MejorJugada(char jugador)
+int MejorMove(char jugador)
 {
     bool Casillaocupada = false;
     bool Ganador = false;
-    int JugadaPC = 0;
+    int MovePC = 0;
 
     ConstruirTableroImaginario();
 
@@ -566,34 +566,34 @@ int MejorJugada(char jugador)
     {
         do
         {
-            JugadaPC++;
-            Casillaocupada = comprobarCasiilaOcupadaImaginaria(JugadaPC);
+            MovePC++;
+            Casillaocupada = comprobarCasiilaOcupadaImaginaria(MovePC);
             if (Casillaocupada == false)
             {
-                remplazarCasillaImaginario(JugadaPC, PC);
-                Ganador = GanarImaginario(JugadaPC);
+                remplazarCasillaImaginario(MovePC, PC);
+                Ganador = GanarImaginario(MovePC);
             }
             ConstruirTableroImaginario();
-        } while (JugadaPC <= 9 && Ganador == false);
+        } while (MovePC <= 9 && Ganador == false);
     }
 
     else
     {
         do
         {
-            JugadaPC++;
-            Casillaocupada = comprobarCasiilaOcupadaImaginaria(JugadaPC);
+            MovePC++;
+            Casillaocupada = comprobarCasiilaOcupadaImaginaria(MovePC);
             if (Casillaocupada == false)
             {
-                remplazarCasillaImaginario(JugadaPC, HUMANO);
-                Ganador = GanarImaginario(JugadaPC);
+                remplazarCasillaImaginario(MovePC, HUMANO);
+                Ganador = GanarImaginario(MovePC);
             }
             ConstruirTableroImaginario();
-        } while (JugadaPC <= 9 && Ganador == false);
+        } while (MovePC <= 9 && Ganador == false);
     }
-    if (JugadaPC >= 10)
+    if (MovePC >= 10)
     {
-        JugadaPC = -1;
+        MovePC = -1;
     }
-    return JugadaPC;
+    return MovePC;
 }
