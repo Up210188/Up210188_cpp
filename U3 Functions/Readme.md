@@ -8,17 +8,19 @@
 
 ## ***INDEX***
 
-[DESCRIPTION](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#description)
+[1.-DESCRIPTION](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#description)
 
-[TIC TAC TOE](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#tic-tac-toe)
+[2.-TIC TAC TOE](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#tic-tac-toe)
 
-[EXECUTION AND USE](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#execution-and-use)
+[3.-EXECUTION AND USE](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#execution-and-use)
 
-[GENERAL CONSIDERATIONS](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#general-considerations)
+[4.-GENERAL CONSIDERATIONS](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#general-considerations)
 
-[FLOWCHART](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#flowchart)
+[5.-FLOWCHART](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#flowchart)
 
-[EXPLANATION OF A GAME EXECUTION](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#explanation-of-a-game-execution)
+[6.-EXPLANATION OF A GAME EXECUTION](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#explanation-of-a-game-execution)
+
+[7.-CONCLUSION](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#conclusion)
 
 ## ***DESCRIPTION***
 In this unit we learned about c++ functions such as function types, how to call a function, etc. To better understand the subject we play the tic tac toe game.
@@ -68,27 +70,51 @@ To play you need to follow the following steps:
 
 Step 1: Ask the game mode you want.
 
+<div align="center"> 
+
 <img alt="1" height="70" src="../imagenes/U3.2.png"/> 
+
+<div align="left"> 
 
 Step 2: Select game mode 1, the board is built and the move is requested
 
+<div align="center"> 
+
 <img alt="2" height="150" src="../imagenes/U3.3.png"/> 
+
+<div align="left"> 
 
 Step 3: Select move 1 and the PC chose move 2.
 
+<div align="center"> 
+
 <img alt="3" height="130" src="../imagenes/U3.4.png"/> 
+
+<div align="left"> 
 
 Step 4: Select move 4 and the PC chose move 7.
 
+<div align="center"> 
+
 <img alt="4" height="130" src="../imagenes/U3.5.png"/> 
+
+<div align="left"> 
 
 Step 5: Select move 5 and the PC chose move 6.
 
+<div align="center"> 
+
 <img alt="5" height="130" src="../imagenes/U3.6.png"/> 
+
+<div align="left"> 
 
 Step 6: Finally select move 9 and I win
 
+<div align="center"> 
+
 <img alt="6" height="120" src="../imagenes/U3.7.png"/> 
+
+<div align="left"> 
 
 ## ***CONCLUSION***
 This game was very entertaining because personally I don't have much programming skills and I had some difficulties such as: I didn't know how to debug, I didn't know where the error in my code was, etc. But thanks to my teacher and colleagues who They helped me, I was able to finish my program. The advantages I had with this program is to use functions to divide the program and find the error easier.
