@@ -8,12 +8,24 @@
 
 ## ***INDEX***
 
+[DESCRIPTION](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#description)
+
+[TIC TAC TOE](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#tic-tac-toe)
+
+[EXECUTION AND USE](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#execution-and-use)
+
+[GENERAL CONSIDERATIONS](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#general-considerations)
+
+[FLOWCHART](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#flowchart)
+
+[EXPLANATION OF A GAME EXECUTION](https://github.com/Up210188/Up210188_cpp/tree/main/U3%20Functions#explanation-of-a-game-execution)
+
 ## ***DESCRIPTION***
 In this unit we learned about c++ functions such as function types, how to call a function, etc. To better understand the subject we play the tic tac toe game.
 
 <div align="center"> 
 
-# Tic tac toe 
+# TIC TAC TOE
 
 <img src="../imagenes/Tic_Tac_Toe.gif" height="200" width="200">
 
@@ -33,7 +45,7 @@ To play you need to follow the following steps:
 5.- The game ends until one of the players wins or the boxes are finished and that is considered a tie.
 
 
-## ***General considerations***
+## ***GENERAL CONSIDERATIONS***
 1.-The game was developed in linux please use this operating system.
 
 2.- When you select the game mode, type the number 1 to play alone and 2 for multiplayer, if you select another number it will repeat the question to select the game mode and if you type a letter you can bug.
@@ -44,7 +56,7 @@ To play you need to follow the following steps:
 
 5.- When you are playing, only choose whole numbers from 1 to 9.
 
-## ***Flowchart***
+## ***FLOWCHART***
 
 <div align="center"> 
 
@@ -52,7 +64,7 @@ To play you need to follow the following steps:
 
 <div align="left"> 
 
-## ***Explanation of a game execution***
+## ***EXPLANATION OF A GAME EXECUTION***
 
 Step 1: Ask the game mode you want.
 
@@ -78,6 +90,8 @@ Step 6: Finally select move 9 and I win
 
 <img alt="6" height="120" src="../imagenes/U3.7.png"/> 
 
+## ***CONCLUSION***
+This game was very entertaining because personally I don't have much programming skills and I had some difficulties such as: I didn't know how to debug, I didn't know where the error in my code was, etc. But thanks to my teacher and colleagues who They helped me, I was able to finish my program. The advantages I had with this program is to use functions to divide the program and find the error easier.
 
 
 
