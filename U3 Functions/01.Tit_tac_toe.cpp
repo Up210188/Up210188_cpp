@@ -55,7 +55,7 @@ int main()
                     occupiedBox = checkBusyBox(Move);
                     if (occupiedBox == true)
                     {
-                        cout << "otra vez ";
+                        cout << "Again,";
                     }
 
                 } while (occupiedBox == true);
@@ -102,7 +102,7 @@ int main()
                         Move = TurnPC();
                     }
                     occupiedBox = checkBusyBox(Move);
-                    if (occupiedBox == true)
+                    if (occupiedBox == true && playerTurn % 2 != 0)
                     {
 
                         cout << "AGAIN, ";
