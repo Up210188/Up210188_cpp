@@ -1,9 +1,9 @@
 /*
-Date: //2022
+Date: 24/11/2022
 Unidad:3
-Author:Osvaldo Esparza Gutierrez 
+Author:Osvaldo Esparza Gutierrez
 Email: up210188@alumnos.upa.edu.mx
-Description:
+Description:elaborate tic tac toe game
 
 */
 
@@ -35,7 +35,7 @@ int main()
     int gameMode = 0;
     do
     {
-        //Ask the game mode
+        // Ask the game mode
         cout << "1-Single player" << endl
              << "2-Multiplayer " << endl
              << "Select game mode: ";
@@ -143,7 +143,7 @@ int main()
 }
 
 void buildBoard()
-//build the board
+// build the board
 {
     int x = 0, y = 0;
     for (int row = 0; row < 6; row++)
@@ -205,7 +205,7 @@ void buildBoard()
 
 int selectPlay()
 
-//ask for the play
+// ask for the play
 {
     int Move;
     do
@@ -218,7 +218,7 @@ int selectPlay()
 }
 
 bool checkBusyBox(int Move)
-//check that the move is valid
+// check that the move is valid
 {
     int row = 0, col = 0;
     if (Move == 1)
@@ -269,7 +269,7 @@ bool checkBusyBox(int Move)
 
     if (playArea[row][col] == 'X' || playArea[row][col] == 'O')
     {
-        return true; //The box is occupied
+        return true; // The box is occupied
     }
     else
     {
@@ -278,7 +278,7 @@ bool checkBusyBox(int Move)
 }
 
 void replaceBox(int Move)
-//place the play
+// place the play
 {
     int row = 0, col = 0;
     if (Move == 1)
@@ -339,7 +339,7 @@ void replaceBox(int Move)
 }
 
 bool verifyWinner()
-//check the winner
+// check the winner
 {
     if (playArea[0][0] == playArea[0][1] && playArea[0][0] == playArea[0][2] && playArea[0][1] == playArea[0][2])
     {
@@ -380,7 +380,7 @@ bool verifyWinner()
 }
 
 int TurnPC()
-//does the turn of the pc
+// does the turn of the pc
 {
 
     int Move;
@@ -476,7 +476,7 @@ bool checkImaginaryBusyBox(int Move)
 }
 
 bool checkImaginaryWinner(int Move)
-//check the imaginary valid movement
+// check the imaginary valid movement
 {
     if (imaginaryPlayArea[0][0] == imaginaryPlayArea[0][1] && imaginaryPlayArea[0][0] == imaginaryPlayArea[0][2] && imaginaryPlayArea[0][1] == imaginaryPlayArea[0][2])
     {
@@ -517,7 +517,7 @@ bool checkImaginaryWinner(int Move)
 }
 
 void replaceImaginaryBox(int Move, char player)
-//replaces the imaginary play
+// replaces the imaginary play
 {
     int row = 0, col = 0;
     if (Move == 1)
@@ -585,7 +585,7 @@ int selectBestPlay(char player)
 
     buildImaginaryBoard();
 
-    //find the best play to win
+    // find the best play to win
 
     if (player == PC)
     {
@@ -601,7 +601,7 @@ int selectBestPlay(char player)
             buildImaginaryBoard();
         } while (MovePC <= 9 && winner == false);
     }
-//look for the best move to not lose
+    // look for the best move to not lose
     else
     {
         do
